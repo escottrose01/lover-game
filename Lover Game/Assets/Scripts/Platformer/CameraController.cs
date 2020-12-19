@@ -61,7 +61,8 @@ public class CameraController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = new Color(1f, 0f, 0f, 0.5f);
-        Gizmos.DrawCube(focusArea.center, focusAreaSize);
+        if (Application.isPlaying) Gizmos.DrawCube(focusArea.center, focusAreaSize);
+        else Gizmos.DrawCube(transform.position, focusAreaSize);
     }
 
     struct FocusArea
