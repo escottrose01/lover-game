@@ -114,7 +114,7 @@ public class PlatformerController : RaycastController
                 {
                     if (directionY == 1 || hit.distance == 0) continue;
                     if (collisions.fallingThroughPlatform) continue;
-                    if (playerInput.y < -0.9f)
+                    if (playerInput.y < -0.5f)
                     {
                         collisions.fallingThroughPlatform = true;
                         Invoke(nameof(ResetFallingThroughPlatform), 0.25f);
