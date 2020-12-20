@@ -27,16 +27,19 @@ public class Player : MonoBehaviour
     float velocityXSmoothing;
 
     PlatformerController controller;
+    PlayerGun gun;
 
     Vector2 directionalInput;
     bool wallSliding;
     int wallDirX;
     int directionX;
+    float inputDirectionX = 1;
 
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<PlatformerController>();
+        gun = GetComponent<PlayerGun>();
 
         gravity = -2f * maxJumpHeight / (timeToJumpApex * timeToJumpApex);
         maxJumpVelocity = Mathf.Abs(gravity * timeToJumpApex);
@@ -127,8 +130,13 @@ public class Player : MonoBehaviour
         if (velocity.y > minJumpVelocity) velocity.y = minJumpVelocity;
     }
 
+    public void OnFireDown()
+    {
+        gun.Fire(Vector2.right * inputDirectionX);
+    }
     public void SetDirectionalInput(Vector2 input)
     {
         directionalInput = input;
+        if (input.x != 0f) inputDirectionX = Mathf.Sign(input.x);
     }
 }
