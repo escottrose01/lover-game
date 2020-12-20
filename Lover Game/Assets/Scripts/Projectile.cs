@@ -10,21 +10,21 @@ public class Projectile : MonoBehaviour
 
     float travelPercentage;
     bool fired;
-    Vector2 targetPosition;
-    Vector2 startPosition;
+    Vector3 targetPosition;
+    Vector3 startPosition;
 
     private void Update()
     {
         if (fired)
         {
             travelPercentage += Time.deltaTime * bulletSpeed / bulletDistance;
-            transform.position = Vector2.Lerp(startPosition, targetPosition, Tween.GetEasedValue(travelPercentage, Tween.Easing.OutQuad));
+            transform.position = Vector3.Lerp(startPosition, targetPosition, Tween.GetEasedValue(travelPercentage, Tween.Easing.OutQuad));
 
             if (travelPercentage >= 1f) Destroy(gameObject); 
         }
     }
 
-    public void FireProjectile(Vector2 direction)
+    public void FireProjectile(Vector3 direction)
     {
         travelPercentage = 0f;
         fired = true;
