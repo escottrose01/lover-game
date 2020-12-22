@@ -52,7 +52,14 @@ public class DialogueManager : MonoBehaviour
 
     public void Next()
     {
-        if (sentences.Count == 0)
+        if (sentence != null && dialogueText.text != sentence)
+        {
+            if (dialogueTyper != null) StopCoroutine(dialogueTyper);
+            dialogueTyper = null;
+            dialogueText.text = sentence;
+            return;
+        }
+        else if (sentences.Count == 0)
         {
             EndDialogue();
             return;
@@ -92,5 +99,6 @@ public class DialogueManager : MonoBehaviour
         dialogueTyper = null;
         animator.SetBool("isOpen", false);
         TimeManager.Instance.UnfreezeTime();
+        sentence = null;
     }
 }
