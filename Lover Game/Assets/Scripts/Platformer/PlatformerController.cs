@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlatformerController : RaycastController
 {
@@ -9,6 +10,8 @@ public class PlatformerController : RaycastController
     public CollisionInfo collisions;
     [HideInInspector]
     public Vector2 playerInput;
+
+    public UnityEvent onLandEvent;
 
     // Start is called before the first frame update
     public override void Start()
@@ -35,6 +38,8 @@ public class PlatformerController : RaycastController
         if (moveAmount.y != 0) VerticalCollisions(ref moveAmount);
 
         transform.Translate(moveAmount);
+
+        if (collisions.below && !collisions.belowOld) onLandEvent.Invoke();
 
         if (standingOnPlatform) collisions.below = true;
     }
@@ -239,6 +244,8 @@ public class PlatformerController : RaycastController
         public bool above, below;
         public bool left, right;
 
+        public bool belowOld;
+
         public bool climbingSlope;
         public bool descendingSlope;
         public bool slidingDownMaxSlope;
@@ -257,6 +264,8 @@ public class PlatformerController : RaycastController
             descendingSlope = false;
             slidingDownMaxSlope = false;
             slopeNormal = Vector2.zero;
+
+            belowOld = below;
 
             slopeAngleOld = slopeAngle;
             slopeAngle = 0f;

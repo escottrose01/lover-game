@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,6 +30,9 @@ public class Player : MonoBehaviour
     PlatformerController controller;
     PlayerGun gun;
 
+    Animator animator;
+    SpriteRenderer sr;
+
     Vector2 directionalInput;
     bool wallSliding;
     int wallDirX;
@@ -40,6 +44,8 @@ public class Player : MonoBehaviour
     {
         controller = GetComponent<PlatformerController>();
         gun = GetComponent<PlayerGun>();
+        animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
 
         gravity = -2f * maxJumpHeight / (timeToJumpApex * timeToJumpApex);
         maxJumpVelocity = Mathf.Abs(gravity * timeToJumpApex);
@@ -52,6 +58,8 @@ public class Player : MonoBehaviour
         CalculateVelocity();
         HandleWallSliding();
 
+        UpdateAnimator();
+
         controller.Move(velocity * Time.deltaTime, directionalInput);
 
         if (controller.collisions.above || controller.collisions.below)
@@ -59,6 +67,14 @@ public class Player : MonoBehaviour
             if (controller.collisions.slidingDownMaxSlope) velocity.y += controller.collisions.slopeNormal.y * -gravity * Time.deltaTime;
             else velocity.y = 0;
         }
+    }
+
+    private void UpdateAnimator()
+    {
+        if (velocity.x > 0) sr.flipX = false;
+        else if (velocity.x < 0) sr.flipX = true;
+
+        animator.SetFloat("Speed", Mathf.Abs(velocity.x));
     }
 
     private void HandleWallSliding()
@@ -95,6 +111,8 @@ public class Player : MonoBehaviour
     {
         if (wallSliding)
         {
+            animator.SetBool("IsJumping", true);
+            animator.SetTrigger("Jump");
             if (wallDirX == directionX)
             {
                 velocity.x = -wallDirX * wallJumpClimb.x;
@@ -113,6 +131,8 @@ public class Player : MonoBehaviour
         }
         else if (controller.collisions.below)
         {
+            animator.SetBool("IsJumping", true);
+            animator.SetTrigger("Jump");
             if (controller.collisions.slidingDownMaxSlope)
             {
                 if (Mathf.Sign(directionalInput.x) != -Mathf.Sign(controller.collisions.slopeNormal.x))
@@ -128,6 +148,11 @@ public class Player : MonoBehaviour
     public void OnJumpInputUp()
     {
         if (velocity.y > minJumpVelocity) velocity.y = minJumpVelocity;
+    }
+
+    public void OnLand()
+    {
+        animator.SetBool("IsJumping", false);
     }
 
     public void OnFireDown()
