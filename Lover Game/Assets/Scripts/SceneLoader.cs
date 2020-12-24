@@ -67,6 +67,15 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
+    public void LoadScene(int sceneIndex)
+    {
+        if (fadeRoutine == null)
+        {
+            fadeRoutine = NextSceneCoroutine(sceneIndex);
+            StartCoroutine(fadeRoutine);
+        }
+    }
+
     private IEnumerator NextSceneCoroutine(int buildIndex)
     {
         while (canvasGroup.alpha < 1)

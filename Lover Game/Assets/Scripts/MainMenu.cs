@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    public int numLevels;
     public GameObject startScreenUI;
     public GameObject optionsMenuUI;
     public GameObject levelSelectUI;
