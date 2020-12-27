@@ -14,12 +14,12 @@ public class DialogueManager : MonoBehaviour
 
     public int framesPerCharacter = 2;
 
+    public bool Showing { get; private set; }
+
     Queue<string> sentences;
 
     string sentence;
     IEnumerator dialogueTyper;
-    int curChar;
-    int counter;
 
     private void Awake()
     {
@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         sentences.Clear();
+        Showing = true;
 
         animator.SetBool("isOpen", true);
         TimeManager.Instance.FreezeTime();
@@ -76,7 +77,8 @@ public class DialogueManager : MonoBehaviour
         // use a string builder?
         dialogueText.text = "";
         char[] chars = sentence.ToCharArray();
-        curChar = 0;
+        int curChar = 0;
+        int counter = 0;
         int size = sentence.Length;
 
         while (curChar < size)
@@ -100,5 +102,6 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("isOpen", false);
         TimeManager.Instance.UnfreezeTime();
         sentence = null;
+        Showing = false;
     }
 }
