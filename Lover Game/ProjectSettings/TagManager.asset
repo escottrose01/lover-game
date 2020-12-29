@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Through
   - Enemy
+  - BackgroundCamera
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Player
   - Terrain
   - Enemy
-  - 
+  - Background
   - 
   - 
   - 

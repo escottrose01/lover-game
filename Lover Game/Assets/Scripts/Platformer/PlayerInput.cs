@@ -45,7 +45,7 @@ public class PlayerInput : MonoBehaviour
         if (Input.GetButton("Fire1")) player.OnFireDown();
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (DialogueManager.Instance.Showing) DialogueManager.Instance.Next();
+            if (DialogueManager.Instance != null && DialogueManager.Instance.Showing) DialogueManager.Instance.Next();
             else
             {
                 Interacting = true;
