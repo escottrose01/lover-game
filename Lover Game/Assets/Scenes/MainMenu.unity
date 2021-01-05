@@ -2407,7 +2407,10 @@ MonoBehaviour:
   levelArea: {fileID: 947058369}
   levelIcon: {fileID: 8060832286402042537, guid: 830fe29df7c7b00468cb6050b93486bf,
     type: 3}
-  numLevels: 6
+  LevelClearSprite: {fileID: 21300000, guid: 82d0252142f2c574fbf33fdaa17f104a, type: 3}
+  LevelUnlockedSprite: {fileID: 21300000, guid: 82d0252142f2c574fbf33fdaa17f104a,
+    type: 3}
+  LevelLockedSprite: {fileID: 21300000, guid: f9a8e3a4a748961409bd87b996698edd, type: 3}
   numCols: 3
 --- !u!1 &1614690484
 GameObject:
