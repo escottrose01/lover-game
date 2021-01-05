@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class Collectible : MonoBehaviour
 {
     public UnityEvent onCollect;
+    public CollectibleType collectibleType = CollectibleType.Other;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,12 +15,20 @@ public class Collectible : MonoBehaviour
         {
             onCollect.Invoke();
             Destroy(transform.gameObject);
+
+            switch (collectibleType)
+            {
+                case CollectibleType.Heart:
+                    HUD.Instance.AnimateHeartCollect(transform.position);
+                    break;
+                case CollectibleType.Smile:
+                    HUD.Instance.AnimateSmileCollect(transform.position);
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = new Color(0f, 1f, 0f, 0.5f);
-        Gizmos.DrawMesh(GetComponent<BoxCollider2D>().CreateMesh(false, false), transform.position);
-    }
+    public enum CollectibleType { Heart, Smile, Other }
 }

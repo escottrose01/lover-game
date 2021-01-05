@@ -313,7 +313,7 @@ Transform:
   m_Children:
   - {fileID: 726673262}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &372657252
 GameObject:
@@ -399,6 +399,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0536b864d0e1a4d4baddba1e4417da40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heartCollected:
+    m_PersistentCalls:
+      m_Calls: []
+  smileCollected:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &472469812
 Transform:
   m_ObjectHideFlags: 0
@@ -1200,7 +1206,7 @@ PrefabInstance:
     - target: {fileID: 6304209336783711285, guid: 3314a57b370ab79489ae18b6450cfb9f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6304209336783711285, guid: 3314a57b370ab79489ae18b6450cfb9f,
         type: 3}
@@ -1249,6 +1255,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 875316250222123146, guid: 4882fdebd59c1a844977da8d3d67d3de,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 875316250222123146, guid: 4882fdebd59c1a844977da8d3d67d3de,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7298265922708687553, guid: 4882fdebd59c1a844977da8d3d67d3de,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -1325,6 +1341,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7298265923191976653, guid: 4882fdebd59c1a844977da8d3d67d3de,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459377976692816072, guid: 4882fdebd59c1a844977da8d3d67d3de,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459377976692816072, guid: 4882fdebd59c1a844977da8d3d67d3de,
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0

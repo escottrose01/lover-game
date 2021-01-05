@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class GameStats : MonoBehaviour
 {
@@ -12,11 +13,14 @@ public class GameStats : MonoBehaviour
     public static int CurLevel { get; private set; }
     public static bool SecretLevelUnlocked { get; private set; }
 
+    public UnityEvent heartCollected;
+    public UnityEvent smileCollected;
+
     static int[] smileCount;
     static int[] heartCount;
 
-    int levelHeartCount;
-    int levelSmileCount;
+    public int LevelHeartCount { get; private set; }
+    public int LevelSmileCount { get; private set; }
     int levelNum;
 
     private void Awake()
@@ -39,18 +43,25 @@ public class GameStats : MonoBehaviour
 
     public void IncrementHearts()
     {
-        ++levelHeartCount;
+        ++LevelHeartCount;
+        heartCollected.Invoke();
     }
 
     public void IncrementSmiles()
     {
-        ++levelSmileCount;
+        ++LevelSmileCount;
+        smileCollected.Invoke();
+    }
+
+    public static void Foo()
+    {
+
     }
 
     public void SaveCounts()
     {
-        heartCount[levelNum] = Mathf.Max(heartCount[levelNum], levelHeartCount);
-        smileCount[levelNum] = Mathf.Max(smileCount[levelNum], levelSmileCount);
+        heartCount[levelNum] = Mathf.Max(heartCount[levelNum], LevelHeartCount);
+        smileCount[levelNum] = Mathf.Max(smileCount[levelNum], LevelSmileCount);
     }
 
     void ReadStatsFromSave()
@@ -91,8 +102,8 @@ public class GameStats : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        levelHeartCount = 0;
-        levelSmileCount = 0;
+        LevelHeartCount = 0;
+        LevelSmileCount = 0;
         levelNum = SceneManager.GetActiveScene().buildIndex - 1;
 
         SaveStats();
