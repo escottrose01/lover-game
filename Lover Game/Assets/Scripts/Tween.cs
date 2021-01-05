@@ -207,7 +207,7 @@ public static class Tween
 
         while (t < 1f)
         {
-            callback.Invoke(Vector3.Lerp(start, end, GetEasedValue(t, easingFunction)));
+            callback.Invoke(Vector3.LerpUnclamped(start, end, GetEasedValue(t, easingFunction)));
 
             t += Time.deltaTime / time;
 
