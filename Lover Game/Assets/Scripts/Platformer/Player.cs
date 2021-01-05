@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public float timeToJumpApex = 0.4f;
     float accelerationTimeAirborne = 0.2f;
     float accelerationTimeGrouded = 0.1f;
-    float moveSpeed = 6f;
+    float moveSpeed = 9;
 
     public Vector2 wallJumpClimb;
     public Vector2 wallJumpOff;
@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     float timeToWallUnstick;
 
     float gravity;
+    float gravityMultiplier = 1f;
     float maxJumpVelocity;
     float minJumpVelocity;
     Vector3 velocity;
@@ -50,6 +51,8 @@ public class Player : MonoBehaviour
         gravity = -2f * maxJumpHeight / (timeToJumpApex * timeToJumpApex);
         maxJumpVelocity = Mathf.Abs(gravity * timeToJumpApex);
         minJumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(gravity) * minHumpHeight);
+
+        gravity *= 2f; // compensate for floaty jumps
     }
 
     // Update is called once per frame
@@ -104,11 +107,13 @@ public class Player : MonoBehaviour
     {
         float targetVelocityX = directionalInput.x * moveSpeed;
         velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? accelerationTimeGrouded : accelerationTimeAirborne);
-        velocity.y += gravity * Time.deltaTime;
+        velocity.y += gravityMultiplier * gravity * Time.deltaTime;
     }
 
     public void OnJumpInputDown()
     {
+        gravityMultiplier = 0.5f;
+
         if (wallSliding)
         {
             animator.SetBool("IsJumping", true);
@@ -147,11 +152,13 @@ public class Player : MonoBehaviour
 
     public void OnJumpInputUp()
     {
+        gravityMultiplier = 1f;
         if (velocity.y > minJumpVelocity) velocity.y = minJumpVelocity;
     }
 
     public void OnLand()
     {
+        gravityMultiplier = 1f;
         animator.SetBool("IsJumping", false);
     }
 
@@ -159,6 +166,7 @@ public class Player : MonoBehaviour
     {
         gun.Fire(Vector2.right * inputDirectionX);
     }
+
     public void SetDirectionalInput(Vector2 input)
     {
         directionalInput = input;
