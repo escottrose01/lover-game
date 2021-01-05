@@ -7,7 +7,7 @@ public class Floatable : MonoBehaviour
     public float offsetY = 0.25f;
 
     bool cycle;
-    float movementPercent = 0.5f;
+    float movementPercent;
     float speed = 0.5f;
     Vector2 startPos;
     Vector2 bottom, top;
@@ -17,6 +17,7 @@ public class Floatable : MonoBehaviour
         startPos = transform.position;
         bottom = startPos + offsetY * Vector2.down;
         top = startPos + offsetY * Vector2.up;
+        movementPercent = Random.Range(0f, 1f);
     }
 
     // Update is called once per frame
