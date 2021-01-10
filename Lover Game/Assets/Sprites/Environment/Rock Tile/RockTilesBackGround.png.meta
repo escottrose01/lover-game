@@ -1,0 +1,2996 @@
+fileFormatVersion: 2
+guid: cc199909afbd93a428c0a30e1065c6b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7744557225866598729
+    second: RockTilesBackGround_0
+  - first:
+      213: 6675836453662810031
+    second: RockTilesBackGround_1
+  - first:
+      213: 6612122800711313460
+    second: RockTilesBackGround_2
+  - first:
+      213: 8979387133325169049
+    second: RockTilesBackGround_3
+  - first:
+      213: 9070532774140601313
+    second: RockTilesBackGround_4
+  - first:
+      213: -6116441642407953401
+    second: RockTilesBackGround_5
+  - first:
+      213: -1007508856009802619
+    second: RockTilesBackGround_6
+  - first:
+      213: 3746609973380269608
+    second: RockTilesBackGround_7
+  - first:
+      213: 2214668762302881510
+    second: RockTilesBackGround_8
+  - first:
+      213: -2766158020976782322
+    second: RockTilesBackGround_9
+  - first:
+      213: 7226787663397588172
+    second: RockTilesBackGround_10
+  - first:
+      213: -802992364509393959
+    second: RockTilesBackGround_11
+  - first:
+      213: -3746290564270711766
+    second: RockTilesBackGround_12
+  - first:
+      213: 6237223802060646855
+    second: RockTilesBackGround_13
+  - first:
+      213: -5232047583833591898
+    second: RockTilesBackGround_14
+  - first:
+      213: 4074076628121696552
+    second: RockTilesBackGround_15
+  - first:
+      213: -3986775326703475675
+    second: RockTilesBackGround_16
+  - first:
+      213: -6152243216843039196
+    second: RockTilesBackGround_17
+  - first:
+      213: -4345052640278292023
+    second: RockTilesBackGround_18
+  - first:
+      213: 6013084924680536123
+    second: RockTilesBackGround_19
+  - first:
+      213: 8229169324908189346
+    second: RockTilesBackGround_20
+  - first:
+      213: 454253998421888271
+    second: RockTilesBackGround_21
+  - first:
+      213: 7220117769731600854
+    second: RockTilesBackGround_22
+  - first:
+      213: 6885456787030429132
+    second: RockTilesBackGround_23
+  - first:
+      213: 6390107858170012759
+    second: RockTilesBackGround_24
+  - first:
+      213: 4324969618444074380
+    second: RockTilesBackGround_25
+  - first:
+      213: -214309610770740270
+    second: RockTilesBackGround_26
+  - first:
+      213: -6599406507841721565
+    second: RockTilesBackGround_27
+  - first:
+      213: -6751806621333415277
+    second: RockTilesBackGround_28
+  - first:
+      213: -2874567704525068688
+    second: RockTilesBackGround_29
+  - first:
+      213: 3387842671775837561
+    second: RockTilesBackGround_30
+  - first:
+      213: 3139213720856159400
+    second: RockTilesBackGround_31
+  - first:
+      213: -2556367392389327553
+    second: RockTilesBackGround_32
+  - first:
+      213: 7242740341657304412
+    second: RockTilesBackGround_33
+  - first:
+      213: 7468231202155550327
+    second: RockTilesBackGround_34
+  - first:
+      213: 8859214475368845415
+    second: RockTilesBackGround_35
+  - first:
+      213: -3998330150486046089
+    second: RockTilesBackGround_36
+  - first:
+      213: 7410925158497042070
+    second: RockTilesBackGround_37
+  - first:
+      213: 5886669191993251273
+    second: RockTilesBackGround_38
+  - first:
+      213: 5579875596717685920
+    second: RockTilesBackGround_39
+  - first:
+      213: 5110853707703760715
+    second: RockTilesBackGround_40
+  - first:
+      213: 3567260033188820470
+    second: RockTilesBackGround_41
+  - first:
+      213: -1820496660235721035
+    second: RockTilesBackGround_42
+  - first:
+      213: -3021266088588768743
+    second: RockTilesBackGround_43
+  - first:
+      213: 3196253655868522493
+    second: RockTilesBackGround_44
+  - first:
+      213: -9171119596634645715
+    second: RockTilesBackGround_45
+  - first:
+      213: 7770807928750346900
+    second: RockTilesBackGround_46
+  - first:
+      213: -1065776482156031311
+    second: RockTilesBackGround_47
+  - first:
+      213: 7246938520059392810
+    second: RockTilesBackGround_48
+  - first:
+      213: 5548428298127618348
+    second: RockTilesBackGround_49
+  - first:
+      213: 5467912986405823592
+    second: RockTilesBackGround_50
+  - first:
+      213: 5356299822556736917
+    second: RockTilesBackGround_51
+  - first:
+      213: -387002713489396131
+    second: RockTilesBackGround_52
+  - first:
+      213: 2970651810353262592
+    second: RockTilesBackGround_53
+  - first:
+      213: 3346330002588239424
+    second: RockTilesBackGround_54
+  - first:
+      213: 9196364180823530120
+    second: RockTilesBackGround_55
+  - first:
+      213: -7672684247235986860
+    second: RockTilesBackGround_56
+  - first:
+      213: -8966808934052032955
+    second: RockTilesBackGround_57
+  - first:
+      213: -6812402157554416068
+    second: RockTilesBackGround_58
+  - first:
+      213: -6436895379138251576
+    second: RockTilesBackGround_59
+  - first:
+      213: -229476930796774749
+    second: RockTilesBackGround_60
+  - first:
+      213: -228205964589853731
+    second: RockTilesBackGround_61
+  - first:
+      213: -1674016763512872124
+    second: RockTilesBackGround_62
+  - first:
+      213: -8550869050683721158
+    second: RockTilesBackGround_63
+  - first:
+      213: 5370776195902394803
+    second: RockTilesBackGround_64
+  - first:
+      213: 4955821211437959633
+    second: RockTilesBackGround_65
+  - first:
+      213: -4368369396028203114
+    second: RockTilesBackGround_66
+  - first:
+      213: -8591702844865807372
+    second: RockTilesBackGround_67
+  - first:
+      213: 6076320317826247326
+    second: RockTilesBackGround_68
+  - first:
+      213: -6958382267253314593
+    second: RockTilesBackGround_69
+  - first:
+      213: 8321810301219267295
+    second: RockTilesBackGround_70
+  - first:
+      213: 1429381673796262596
+    second: RockTilesBackGround_71
+  - first:
+      213: -1120810477212066248
+    second: RockTilesBackGround_72
+  - first:
+      213: -5273737017513495088
+    second: RockTilesBackGround_73
+  - first:
+      213: 5533476178335338016
+    second: RockTilesBackGround_74
+  - first:
+      213: 1423722120428299137
+    second: RockTilesBackGround_75
+  - first:
+      213: 7004004779229141877
+    second: RockTilesBackGround_76
+  - first:
+      213: -8557769015040222694
+    second: RockTilesBackGround_77
+  - first:
+      213: 3938171379087338335
+    second: RockTilesBackGround_78
+  - first:
+      213: 8052308686358157175
+    second: RockTilesBackGround_79
+  - first:
+      213: 2683280200750946326
+    second: RockTilesBackGround_80
+  - first:
+      213: 2118475827407745819
+    second: RockTilesBackGround_81
+  - first:
+      213: -4957939548592581696
+    second: RockTilesBackGround_82
+  - first:
+      213: -4162414272296530100
+    second: RockTilesBackGround_83
+  - first:
+      213: -3740306117924215631
+    second: RockTilesBackGround_84
+  - first:
+      213: 4198375219962098027
+    second: RockTilesBackGround_85
+  - first:
+      213: 3643547975316132188
+    second: RockTilesBackGround_86
+  - first:
+      213: 2903562838245862302
+    second: RockTilesBackGround_87
+  - first:
+      213: -3662304674794911852
+    second: RockTilesBackGround_88
+  - first:
+      213: -62514303271619528
+    second: RockTilesBackGround_89
+  - first:
+      213: 5215407123235816552
+    second: RockTilesBackGround_90
+  - first:
+      213: 3064458291669754164
+    second: RockTilesBackGround_91
+  - first:
+      213: -5048135494371569018
+    second: RockTilesBackGround_92
+  - first:
+      213: 6086062809813952690
+    second: RockTilesBackGround_93
+  - first:
+      213: -2828388190121695636
+    second: RockTilesBackGround_94
+  - first:
+      213: -1801802723999177107
+    second: RockTilesBackGround_95
+  - first:
+      213: -3513035364329511384
+    second: RockTilesBackGround_96
+  - first:
+      213: -609600021670129985
+    second: RockTilesBackGround_97
+  - first:
+      213: -1043725770423761370
+    second: RockTilesBackGround_98
+  - first:
+      213: -6300854833446871114
+    second: RockTilesBackGround_99
+  - first:
+      213: -5007777630877873581
+    second: RockTilesBackGround_100
+  - first:
+      213: -4253044191218369753
+    second: RockTilesBackGround_101
+  - first:
+      213: -7801874488114759336
+    second: RockTilesBackGround_102
+  - first:
+      213: 9067417508255699332
+    second: RockTilesBackGround_103
+  - first:
+      213: -4817636139636966819
+    second: RockTilesBackGround_104
+  - first:
+      213: 2729709966468702815
+    second: RockTilesBackGround_105
+  - first:
+      213: 4603205276644230619
+    second: RockTilesBackGround_106
+  - first:
+      213: 4616670271828766086
+    second: RockTilesBackGround_107
+  - first:
+      213: -6124678585977442634
+    second: RockTilesBackGround_108
+  - first:
+      213: -3205798620892111782
+    second: RockTilesBackGround_109
+  - first:
+      213: 6702089687901523620
+    second: RockTilesBackGround_110
+  - first:
+      213: -4762931307623306957
+    second: RockTilesBackGround_111
+  - first:
+      213: 2626106220898539352
+    second: RockTilesBackGround_112
+  - first:
+      213: -2529671290098527943
+    second: RockTilesBackGround_113
+  - first:
+      213: -4999599555022840565
+    second: RockTilesBackGround_114
+  - first:
+      213: -7543250045896206122
+    second: RockTilesBackGround_115
+  - first:
+      213: -8906030194945319211
+    second: RockTilesBackGround_116
+  - first:
+      213: -3026554529715068908
+    second: RockTilesBackGround_117
+  - first:
+      213: 5382328985897777291
+    second: RockTilesBackGround_118
+  - first:
+      213: -2631945000033814228
+    second: RockTilesBackGround_119
+  - first:
+      213: 8209873292504798487
+    second: RockTilesBackGround_120
+  - first:
+      213: 6591040071221171628
+    second: RockTilesBackGround_121
+  - first:
+      213: 5725116395377178619
+    second: RockTilesBackGround_122
+  - first:
+      213: 5858513206891328036
+    second: RockTilesBackGround_123
+  - first:
+      213: -514699865424508949
+    second: RockTilesBackGround_124
+  - first:
+      213: -989880269722705790
+    second: RockTilesBackGround_125
+  - first:
+      213: 3049761570108723946
+    second: RockTilesBackGround_126
+  - first:
+      213: 8224872015814428040
+    second: RockTilesBackGround_127
+  - first:
+      213: -8542857405885657880
+    second: RockTilesBackGround_128
+  - first:
+      213: 8917112608014662164
+    second: RockTilesBackGround_129
+  - first:
+      213: -5825528366961118986
+    second: RockTilesBackGround_130
+  - first:
+      213: -8113042904962232295
+    second: RockTilesBackGround_131
+  - first:
+      213: -6143246741623152844
+    second: RockTilesBackGround_132
+  - first:
+      213: 4387885144131630919
+    second: RockTilesBackGround_133
+  - first:
+      213: -7624410988135522750
+    second: RockTilesBackGround_134
+  - first:
+      213: 920889482085582543
+    second: RockTilesBackGround_135
+  - first:
+      213: -4251595584691532566
+    second: RockTilesBackGround_136
+  - first:
+      213: -1218709095547311495
+    second: RockTilesBackGround_137
+  - first:
+      213: -571503317671680797
+    second: RockTilesBackGround_138
+  - first:
+      213: -5382121849411582499
+    second: RockTilesBackGround_139
+  - first:
+      213: 3217016408935013658
+    second: RockTilesBackGround_140
+  - first:
+      213: -9058254862921379179
+    second: RockTilesBackGround_141
+  - first:
+      213: -9102460490200769881
+    second: RockTilesBackGround_142
+  - first:
+      213: 3888798937896717443
+    second: RockTilesBackGround_143
+  - first:
+      213: 1742859926285941907
+    second: RockTilesBackGround_144
+  - first:
+      213: 8742435085055156773
+    second: RockTilesBackGround_145
+  - first:
+      213: -3832085010098571656
+    second: RockTilesBackGround_146
+  - first:
+      213: 3568901540074880171
+    second: RockTilesBackGround_147
+  - first:
+      213: 2003821021891565425
+    second: RockTilesBackGround_148
+  - first:
+      213: 3904227712443665956
+    second: RockTilesBackGround_149
+  - first:
+      213: -979451802707227502
+    second: RockTilesBackGround_150
+  - first:
+      213: -6783086459408758834
+    second: RockTilesBackGround_151
+  - first:
+      213: -3825320992458427335
+    second: RockTilesBackGround_152
+  - first:
+      213: 2867113353832290670
+    second: RockTilesBackGround_153
+  - first:
+      213: -7580346695760025653
+    second: RockTilesBackGround_154
+  - first:
+      213: 4309735512562265589
+    second: RockTilesBackGround_155
+  - first:
+      213: -3879775060270802946
+    second: RockTilesBackGround_156
+  - first:
+      213: -7135796601834200414
+    second: RockTilesBackGround_157
+  - first:
+      213: -6036858433548180979
+    second: RockTilesBackGround_158
+  - first:
+      213: -6384515014816619312
+    second: RockTilesBackGround_159
+  - first:
+      213: -600836530610600357
+    second: RockTilesBackGround_160
+  - first:
+      213: 8304270372591697809
+    second: RockTilesBackGround_161
+  - first:
+      213: 887365361895661421
+    second: RockTilesBackGround_162
+  - first:
+      213: -1500293460372983724
+    second: RockTilesBackGround_163
+  - first:
+      213: -7408431886696947468
+    second: RockTilesBackGround_164
+  - first:
+      213: -6279678289231310172
+    second: RockTilesBackGround_165
+  - first:
+      213: 5062442651974759336
+    second: RockTilesBackGround_166
+  - first:
+      213: 2120265159341014232
+    second: RockTilesBackGround_167
+  - first:
+      213: 8824068032130711733
+    second: RockTilesBackGround_168
+  - first:
+      213: 7797124667429108889
+    second: RockTilesBackGround_169
+  - first:
+      213: -5946874420757015377
+    second: RockTilesBackGround_170
+  - first:
+      213: -4048488007437507242
+    second: RockTilesBackGround_171
+  - first:
+      213: -2443992798205572613
+    second: RockTilesBackGround_172
+  - first:
+      213: 5770721967881626847
+    second: RockTilesBackGround_173
+  - first:
+      213: -7146276696973350334
+    second: RockTilesBackGround_174
+  - first:
+      213: -1650007507678973206
+    second: RockTilesBackGround_175
+  - first:
+      213: -7957663260717189366
+    second: RockTilesBackGround_176
+  - first:
+      213: 2352228796290076317
+    second: RockTilesBackGround_177
+  - first:
+      213: -8097594963675295208
+    second: RockTilesBackGround_178
+  - first:
+      213: 6049007605973835264
+    second: RockTilesBackGround_179
+  - first:
+      213: 4468416614228873481
+    second: RockTilesBackGround_180
+  - first:
+      213: -8481169423705936711
+    second: RockTilesBackGround_181
+  - first:
+      213: 5997050744605351577
+    second: RockTilesBackGround_182
+  - first:
+      213: 9185074605185412300
+    second: RockTilesBackGround_183
+  - first:
+      213: 3431621303983706167
+    second: RockTilesBackGround_184
+  - first:
+      213: 7260597511426370062
+    second: RockTilesBackGround_185
+  - first:
+      213: 7273623168972455866
+    second: RockTilesBackGround_186
+  - first:
+      213: 5720024221965010481
+    second: RockTilesBackGround_187
+  - first:
+      213: -5800437197372080079
+    second: RockTilesBackGround_188
+  - first:
+      213: -1074402123012687825
+    second: RockTilesBackGround_189
+  - first:
+      213: 6774854008738540348
+    second: RockTilesBackGround_190
+  - first:
+      213: 732737396301399666
+    second: RockTilesBackGround_191
+  - first:
+      213: -7210246088262253022
+    second: RockTilesBackGround_192
+  - first:
+      213: 439601711956744132
+    second: RockTilesBackGround_193
+  - first:
+      213: -2876987914695987967
+    second: RockTilesBackGround_194
+  - first:
+      213: -235041668198196435
+    second: RockTilesBackGround_195
+  - first:
+      213: 8396230353133085421
+    second: RockTilesBackGround_196
+  - first:
+      213: 8459070547416949289
+    second: RockTilesBackGround_197
+  - first:
+      213: 7370344981151952524
+    second: RockTilesBackGround_198
+  - first:
+      213: -186193743795830537
+    second: RockTilesBackGround_199
+  - first:
+      213: 5382708114832377487
+    second: RockTilesBackGround_200
+  - first:
+      213: 4106878256167405133
+    second: RockTilesBackGround_201
+  - first:
+      213: 191423800354278366
+    second: RockTilesBackGround_202
+  - first:
+      213: 8800786792744645370
+    second: RockTilesBackGround_203
+  - first:
+      213: 5816297876439090253
+    second: RockTilesBackGround_204
+  - first:
+      213: -6392420236227423441
+    second: RockTilesBackGround_205
+  - first:
+      213: -8003571698420844169
+    second: RockTilesBackGround_206
+  - first:
+      213: -7740878306034667503
+    second: RockTilesBackGround_207
+  - first:
+      213: -5833280737115783267
+    second: RockTilesBackGround_208
+  - first:
+      213: -6136535622157546565
+    second: RockTilesBackGround_209
+  - first:
+      213: 3141095547165531379
+    second: RockTilesBackGround_210
+  - first:
+      213: -1217507837089136693
+    second: RockTilesBackGround_211
+  - first:
+      213: 9137880001911254029
+    second: RockTilesBackGround_212
+  - first:
+      213: -8132927672011164813
+    second: RockTilesBackGround_213
+  - first:
+      213: 3764260509004099015
+    second: RockTilesBackGround_214
+  - first:
+      213: 1471437376437829281
+    second: RockTilesBackGround_215
+  - first:
+      213: -7198698588935548802
+    second: RockTilesBackGround_216
+  - first:
+      213: -5741009116615672527
+    second: RockTilesBackGround_217
+  - first:
+      213: 3792135269154577651
+    second: RockTilesBackGround_218
+  - first:
+      213: 7793168583894717631
+    second: RockTilesBackGround_219
+  - first:
+      213: -4726813693130479061
+    second: RockTilesBackGround_220
+  - first:
+      213: 6483741294434530137
+    second: RockTilesBackGround_221
+  - first:
+      213: -4709631562382280368
+    second: RockTilesBackGround_222
+  - first:
+      213: -7269059136513510857
+    second: RockTilesBackGround_223
+  - first:
+      213: 6919948021985881523
+    second: RockTilesBackGround_224
+  - first:
+      213: 6659235244329779002
+    second: RockTilesBackGround_225
+  - first:
+      213: -3119389699711809621
+    second: RockTilesBackGround_226
+  - first:
+      213: 2324458156829267623
+    second: RockTilesBackGround_227
+  - first:
+      213: -3208299647715104282
+    second: RockTilesBackGround_228
+  - first:
+      213: 5259214908440027398
+    second: RockTilesBackGround_229
+  - first:
+      213: 5223320187168857692
+    second: RockTilesBackGround_230
+  - first:
+      213: -1837188085776631038
+    second: RockTilesBackGround_231
+  - first:
+      213: -8504631329041149533
+    second: RockTilesBackGround_232
+  - first:
+      213: 1196791200865513347
+    second: RockTilesBackGround_233
+  - first:
+      213: 8050749073697151421
+    second: RockTilesBackGround_234
+  - first:
+      213: -8762606294909814739
+    second: RockTilesBackGround_235
+  - first:
+      213: -3217289707516298793
+    second: RockTilesBackGround_236
+  - first:
+      213: 3621614022924834246
+    second: RockTilesBackGround_237
+  - first:
+      213: -5638278040487448359
+    second: RockTilesBackGround_238
+  - first:
+      213: -2997758911097413251
+    second: RockTilesBackGround_239
+  - first:
+      213: -6345069168100361276
+    second: RockTilesBackGround_240
+  - first:
+      213: 7485598597630490219
+    second: RockTilesBackGround_241
+  - first:
+      213: -8330237126712067832
+    second: RockTilesBackGround_242
+  - first:
+      213: 3529124932909435950
+    second: RockTilesBackGround_243
+  - first:
+      213: -2296294382176586838
+    second: RockTilesBackGround_244
+  - first:
+      213: 8378895791994502513
+    second: RockTilesBackGround_245
+  - first:
+      213: -6857199743563360796
+    second: RockTilesBackGround_246
+  - first:
+      213: 5764952272656489173
+    second: RockTilesBackGround_247
+  - first:
+      213: -40814187934064788
+    second: RockTilesBackGround_248
+  - first:
+      213: -6652069474453137396
+    second: RockTilesBackGround_249
+  - first:
+      213: -2082466173543471807
+    second: RockTilesBackGround_250
+  - first:
+      213: 5441457596179614080
+    second: RockTilesBackGround_251
+  - first:
+      213: -1778216689277441440
+    second: RockTilesBackGround_252
+  - first:
+      213: 7391741394606832853
+    second: RockTilesBackGround_253
+  - first:
+      213: 6989017007559064645
+    second: RockTilesBackGround_254
+  - first:
+      213: -109177934569688579
+    second: RockTilesBackGround_255
+  - first:
+      213: -256139761789588264
+    second: RockTilesBackGround_256
+  - first:
+      213: 8428332326141868740
+    second: RockTilesBackGround_257
+  - first:
+      213: -3792271329595167222
+    second: RockTilesBackGround_258
+  - first:
+      213: -8104226579750265946
+    second: RockTilesBackGround_259
+  - first:
+      213: -6537373285238069454
+    second: RockTilesBackGround_260
+  - first:
+      213: 8130342962771680593
+    second: RockTilesBackGround_261
+  - first:
+      213: 561999007486516808
+    second: RockTilesBackGround_262
+  - first:
+      213: -8192350232554975893
+    second: RockTilesBackGround_263
+  - first:
+      213: 6419206152842150517
+    second: RockTilesBackGround_264
+  - first:
+      213: -394032920937560291
+    second: RockTilesBackGround_265
+  - first:
+      213: 8895074007128954761
+    second: RockTilesBackGround_266
+  - first:
+      213: -585076862661143031
+    second: RockTilesBackGround_267
+  - first:
+      213: -7734426888066961639
+    second: RockTilesBackGround_268
+  - first:
+      213: -4346522253701362997
+    second: RockTilesBackGround_269
+  - first:
+      213: -4340190769504293116
+    second: RockTilesBackGround_270
+  - first:
+      213: 8072731454146631716
+    second: RockTilesBackGround_271
+  - first:
+      213: -8242096984425961240
+    second: RockTilesBackGround_272
+  - first:
+      213: 2285994710695649080
+    second: RockTilesBackGround_273
+  - first:
+      213: 2661082532297961505
+    second: RockTilesBackGround_274
+  - first:
+      213: 560919260236526247
+    second: RockTilesBackGround_275
+  - first:
+      213: -6898732145271658093
+    second: RockTilesBackGround_276
+  - first:
+      213: 7713721098395671433
+    second: RockTilesBackGround_277
+  - first:
+      213: 7414189003432781166
+    second: RockTilesBackGround_278
+  - first:
+      213: -8930818391105015729
+    second: RockTilesBackGround_279
+  - first:
+      213: 6556922549485614292
+    second: RockTilesBackGround_280
+  - first:
+      213: -4540889775709407749
+    second: RockTilesBackGround_281
+  - first:
+      213: -6318810128750283835
+    second: RockTilesBackGround_282
+  - first:
+      213: -7876770301273713140
+    second: RockTilesBackGround_283
+  - first:
+      213: -6423317003231305689
+    second: RockTilesBackGround_284
+  - first:
+      213: -8236166857335044997
+    second: RockTilesBackGround_285
+  - first:
+      213: -1712581723870783828
+    second: RockTilesBackGround_286
+  - first:
+      213: 6369284423476244906
+    second: RockTilesBackGround_287
+  - first:
+      213: 6804679838638257397
+    second: RockTilesBackGround_288
+  - first:
+      213: -3884556729332965892
+    second: RockTilesBackGround_289
+  - first:
+      213: -4113532038708023327
+    second: RockTilesBackGround_290
+  - first:
+      213: -723794759996636462
+    second: RockTilesBackGround_291
+  - first:
+      213: 6049028680548857812
+    second: RockTilesBackGround_292
+  - first:
+      213: -3271094836470805179
+    second: RockTilesBackGround_293
+  - first:
+      213: -371727645386107530
+    second: RockTilesBackGround_294
+  - first:
+      213: -2667418540739392686
+    second: RockTilesBackGround_295
+  - first:
+      213: -528072718647303549
+    second: RockTilesBackGround_296
+  - first:
+      213: 2530945447476400168
+    second: RockTilesBackGround_297
+  - first:
+      213: -1621552256347986674
+    second: RockTilesBackGround_298
+  - first:
+      213: -8205161719478831246
+    second: RockTilesBackGround_299
+  - first:
+      213: 6553640866140148273
+    second: RockTilesBackGround_300
+  - first:
+      213: 11192979470389849
+    second: RockTilesBackGround_301
+  - first:
+      213: 6804687049799738737
+    second: RockTilesBackGround_302
+  - first:
+      213: 4658112477574022405
+    second: RockTilesBackGround_303
+  - first:
+      213: -7529392406064925442
+    second: RockTilesBackGround_304
+  - first:
+      213: -3512228087691447151
+    second: RockTilesBackGround_305
+  - first:
+      213: 3686964312140964869
+    second: RockTilesBackGround_306
+  - first:
+      213: 7888229100168144461
+    second: RockTilesBackGround_307
+  - first:
+      213: 7773251408785983044
+    second: RockTilesBackGround_308
+  - first:
+      213: -4591721689980188764
+    second: RockTilesBackGround_309
+  - first:
+      213: 7248828837470052655
+    second: RockTilesBackGround_310
+  - first:
+      213: 5121360272729385567
+    second: RockTilesBackGround_311
+  - first:
+      213: -7910823031875201292
+    second: RockTilesBackGround_312
+  - first:
+      213: -3861582861566539405
+    second: RockTilesBackGround_313
+  - first:
+      213: -629516547166637683
+    second: RockTilesBackGround_314
+  - first:
+      213: 2320944155188336580
+    second: RockTilesBackGround_315
+  - first:
+      213: 6684994859873433617
+    second: RockTilesBackGround_316
+  - first:
+      213: 8489577421244859572
+    second: RockTilesBackGround_317
+  - first:
+      213: 7746613922992322319
+    second: RockTilesBackGround_318
+  - first:
+      213: -504004796893736799
+    second: RockTilesBackGround_319
+  - first:
+      213: -4305816691633040809
+    second: RockTilesBackGround_0
+  - first:
+      213: -8583182715539767071
+    second: RockTilesBackGround_1
+  - first:
+      213: -5901693378124952943
+    second: RockTilesBackGround_2
+  - first:
+      213: 3746011039181464180
+    second: RockTilesBackGround_3
+  - first:
+      213: 5358187691151135625
+    second: RockTilesBackGround_4
+  - first:
+      213: -4224949067177920843
+    second: RockTilesBackGround_5
+  - first:
+      213: -7453498248642971834
+    second: RockTilesBackGround_6
+  - first:
+      213: 668777130201827011
+    second: RockTilesBackGround_7
+  - first:
+      213: 2445768284092976424
+    second: RockTilesBackGround_8
+  - first:
+      213: 3407761704712992051
+    second: RockTilesBackGround_9
+  - first:
+      213: 7105982914297756604
+    second: RockTilesBackGround_10
+  - first:
+      213: 5450501447275825752
+    second: RockTilesBackGround_11
+  - first:
+      213: -8729472550107123779
+    second: RockTilesBackGround_12
+  - first:
+      213: 7770311529478729240
+    second: RockTilesBackGround_13
+  - first:
+      213: 3421438141148245979
+    second: RockTilesBackGround_14
+  - first:
+      213: 7423975014214346798
+    second: RockTilesBackGround_15
+  - first:
+      213: -5283073759730025473
+    second: RockTilesBackGround_16
+  - first:
+      213: 5133702068417997550
+    second: RockTilesBackGround_17
+  - first:
+      213: 1068795451733713797
+    second: RockTilesBackGround_18
+  - first:
+      213: -6854029875767969819
+    second: RockTilesBackGround_19
+  - first:
+      213: -5978306096665666429
+    second: RockTilesBackGround_20
+  - first:
+      213: -4189804883956026388
+    second: RockTilesBackGround_21
+  - first:
+      213: 3771527716089743850
+    second: RockTilesBackGround_22
+  - first:
+      213: 7712490988614950495
+    second: RockTilesBackGround_23
+  - first:
+      213: 2029441173129851303
+    second: RockTilesBackGround_24
+  - first:
+      213: 3913460321095766240
+    second: RockTilesBackGround_25
+  - first:
+      213: -7967564408339417465
+    second: RockTilesBackGround_26
+  - first:
+      213: 8329469634625789937
+    second: RockTilesBackGround_27
+  - first:
+      213: -679034015128863373
+    second: RockTilesBackGround_28
+  - first:
+      213: -7288319076194654918
+    second: RockTilesBackGround_29
+  - first:
+      213: -55757408993731546
+    second: RockTilesBackGround_30
+  - first:
+      213: -5344926407356575121
+    second: RockTilesBackGround_31
+  - first:
+      213: 4103556462054368575
+    second: RockTilesBackGround_32
+  - first:
+      213: 7574391582632701752
+    second: RockTilesBackGround_33
+  - first:
+      213: -6497719108206539142
+    second: RockTilesBackGround_34
+  - first:
+      213: 6212756641858556585
+    second: RockTilesBackGround_35
+  - first:
+      213: 1790029401307868781
+    second: RockTilesBackGround_36
+  - first:
+      213: -2099648786576112891
+    second: RockTilesBackGround_37
+  - first:
+      213: -2114921451912682907
+    second: RockTilesBackGround_38
+  - first:
+      213: -829336774463812089
+    second: RockTilesBackGround_39
+  - first:
+      213: -8694377073947088425
+    second: RockTilesBackGround_40
+  - first:
+      213: 7024445251699933905
+    second: RockTilesBackGround_41
+  - first:
+      213: -3927515480649826704
+    second: RockTilesBackGround_42
+  - first:
+      213: 7438598100768965167
+    second: RockTilesBackGround_43
+  - first:
+      213: -3078762141140063610
+    second: RockTilesBackGround_44
+  - first:
+      213: 5915417085493967264
+    second: RockTilesBackGround_45
+  - first:
+      213: 8261588005180805198
+    second: RockTilesBackGround_46
+  - first:
+      213: -6916683612647643054
+    second: RockTilesBackGround_47
+  - first:
+      213: 6531390390789178361
+    second: RockTilesBackGround_48
+  - first:
+      213: 5616197755159660946
+    second: RockTilesBackGround_49
+  - first:
+      213: -548926519580225259
+    second: RockTilesBackGround_50
+  - first:
+      213: -2047408966437782296
+    second: RockTilesBackGround_51
+  - first:
+      213: -9201695514882240862
+    second: RockTilesBackGround_52
+  - first:
+      213: 4927613807833951230
+    second: RockTilesBackGround_53
+  - first:
+      213: 1905441595450842430
+    second: RockTilesBackGround_54
+  - first:
+      213: -1080763654880406607
+    second: RockTilesBackGround_55
+  - first:
+      213: -6952023559837853845
+    second: RockTilesBackGround_56
+  - first:
+      213: -8744326955755315025
+    second: RockTilesBackGround_57
+  - first:
+      213: -6905201259448774046
+    second: RockTilesBackGround_58
+  - first:
+      213: -580751286931278290
+    second: RockTilesBackGround_59
+  - first:
+      213: 6494738105050067805
+    second: RockTilesBackGround_60
+  - first:
+      213: 6908202850354441768
+    second: RockTilesBackGround_61
+  - first:
+      213: 6677866990247194789
+    second: RockTilesBackGround_62
+  - first:
+      213: -7641306954230812479
+    second: RockTilesBackGround_63
+  - first:
+      213: -3258789739910895279
+    second: RockTilesBackGround_64
+  - first:
+      213: 3082842658945820959
+    second: RockTilesBackGround_65
+  - first:
+      213: 779438126244723706
+    second: RockTilesBackGround_66
+  - first:
+      213: 3142662968427549402
+    second: RockTilesBackGround_67
+  - first:
+      213: 6288581811433813380
+    second: RockTilesBackGround_68
+  - first:
+      213: 1501712528787645682
+    second: RockTilesBackGround_69
+  - first:
+      213: 5585248825347760131
+    second: RockTilesBackGround_70
+  - first:
+      213: 3804768852175499520
+    second: RockTilesBackGround_71
+  - first:
+      213: -2206720030952679355
+    second: RockTilesBackGround_72
+  - first:
+      213: -6777229275725473222
+    second: RockTilesBackGround_73
+  - first:
+      213: 1712092025231004097
+    second: RockTilesBackGround_74
+  - first:
+      213: -8441026656387163153
+    second: RockTilesBackGround_75
+  - first:
+      213: -3272890104672655306
+    second: RockTilesBackGround_76
+  - first:
+      213: 2110566649352530923
+    second: RockTilesBackGround_77
+  - first:
+      213: 381765843644911774
+    second: RockTilesBackGround_78
+  - first:
+      213: -7066863749298617054
+    second: RockTilesBackGround_79
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RockTilesBackGround_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752d34b388aae34c0800000000000000
+      internalID: -4305816691633040809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0cafdbbc862e880800000000000000
+      internalID: -8583182715539767071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a469f1429f81ea0800000000000000
+      internalID: -5901693378124952943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4726a1361318cf330800000000000000
+      internalID: 3746011039181464180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9831fe2f05b1c5a40800000000000000
+      internalID: 5358187691151135625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6fdb84537fd55c0800000000000000
+      internalID: -4224949067177920843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647b3ab45dadf8890800000000000000
+      internalID: -7453498248642971834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6c59fa149f74900800000000000000
+      internalID: 668777130201827011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d4740db4d11f120800000000000000
+      internalID: 2445768284092976424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335f890273dca4f20800000000000000
+      internalID: 3407761704712992051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb76babfc58d9260800000000000000
+      internalID: 7105982914297756604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ac0a4303214ab40800000000000000
+      internalID: 5450501447275825752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf675667feaad680800000000000000
+      internalID: -8729472550107123779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ea3bcca21b5db60800000000000000
+      internalID: 7770311529478729240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf2d10acd36b7f20800000000000000
+      internalID: 3421438141148245979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e282f9701f1470760800000000000000
+      internalID: 7423975014214346798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbba1d0860cea6b0800000000000000
+      internalID: -5283073759730025473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_17
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea2ebae4d29e3740800000000000000
+      internalID: 5133702068417997550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5832426fccf15de00800000000000000
+      internalID: 1068795451733713797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_19
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e77fe6642891e0a0800000000000000
+      internalID: -6854029875767969819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cd0bd874ac80da0800000000000000
+      internalID: -5978306096665666429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3ba9518a2dad5c0800000000000000
+      internalID: -4189804883956026388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9c112b978275430800000000000000
+      internalID: 3771527716089743850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e9bcd01b5480b60800000000000000
+      internalID: 7712490988614950495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1f4f89ef50a2c10800000000000000
+      internalID: 2029441173129851303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0df797d676f4630800000000000000
+      internalID: 3913460321095766240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78632e372668d6190800000000000000
+      internalID: -7967564408339417465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffd5435088389370800000000000000
+      internalID: 8329469634625789937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d36d139269396f0800000000000000
+      internalID: -679034015128863373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35e6b55a60bada90800000000000000
+      internalID: -7288319076194654918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c15539ee8e93ff0800000000000000
+      internalID: -55757408993731546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6218ea40c103d5b0800000000000000
+      internalID: -5344926407356575121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3562845cd2c2f830800000000000000
+      internalID: 4103556462054368575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fe7887305ad1960800000000000000
+      internalID: 7574391582632701752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ec411c5e673d5a0800000000000000
+      internalID: -6497719108206539142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a29de9cf35283650800000000000000
+      internalID: 6212756641858556585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ee57aa14677d810800000000000000
+      internalID: 1790029401307868781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_37
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5030d039d8c8cd2e0800000000000000
+      internalID: -2099648786576112891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56224e2152a46a2e0800000000000000
+      internalID: -2114921451912682907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e8aeef89a9d74f0800000000000000
+      internalID: -829336774463812089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d96514bd1e575780800000000000000
+      internalID: -8694377073947088425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d201c34db7db7160800000000000000
+      internalID: 7024445251699933905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ef40eaa79ae79c0800000000000000
+      internalID: -3927515480649826704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22ca3faf853b3760800000000000000
+      internalID: 7438598100768965167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68aec65052a0645d0800000000000000
+      internalID: -3078762141140063610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9f42f7f78c71250800000000000000
+      internalID: 5915417085493967264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e401e69d48e07a270800000000000000
+      internalID: 8261588005180805198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2582f5486e00300a0800000000000000
+      internalID: -6916683612647643054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f38364a4f824aa50800000000000000
+      internalID: 6531390390789178361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_49
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29943a83a1eb0fd40800000000000000
+      internalID: 5616197755159660946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51111a02d32d168f0800000000000000
+      internalID: -548926519580225259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_51
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecb68584642693e0800000000000000
+      internalID: -2047408966437782296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae83209ea20d4080800000000000000
+      internalID: -9201695514882240862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efba04e86a6626440800000000000000
+      internalID: 4927613807833951230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3dd91d190d717a10800000000000000
+      internalID: 1905441595450842430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_55
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b353b89e2b5001f0800000000000000
+      internalID: -1080763654880406607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67d7bdd763758f90800000000000000
+      internalID: -6952023559837853845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_57
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0e45296f8e5a680800000000000000
+      internalID: -8744326955755315025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_58
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262d9f33a0ccb20a0800000000000000
+      internalID: -6905201259448774046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_59
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e263c9f08c1c0f7f0800000000000000
+      internalID: -580751286931278290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53f3bc55e1f12a50800000000000000
+      internalID: 6494738105050067805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ea7b324eddedf50800000000000000
+      internalID: 6908202850354441768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0bdf295ac8cac50800000000000000
+      internalID: 6677866990247194789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0b95d7fcf94f590800000000000000
+      internalID: -7641306954230812479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1596ce25ff376c2d0800000000000000
+      internalID: -3258789739910895279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19e2e0901578ca20800000000000000
+      internalID: 3082842658945820959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb763f98de11da00800000000000000
+      internalID: 779438126244723706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_67
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad216e9b15bfc9b20800000000000000
+      internalID: 3142662968427549402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485be73d6d7854750800000000000000
+      internalID: 6288581811433813380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_69
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f42429a69727d410800000000000000
+      internalID: 1501712528787645682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3006509f63ac28d40800000000000000
+      internalID: 5585248825347760131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_71
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001346ecc114dc430800000000000000
+      internalID: 3804768852175499520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5489354d2d72061e0800000000000000
+      internalID: -2206720030952679355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a510b81e172f1a0800000000000000
+      internalID: -6777229275725473222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c15caa30a292c710800000000000000
+      internalID: 1712092025231004097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_75
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb907e7af27bda80800000000000000
+      internalID: -8441026656387163153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63868125acb5492d0800000000000000
+      internalID: -3272890104672655306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_77
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beba1717f2d3a4d10800000000000000
+      internalID: 2110566649352530923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_78
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9015d9130e4c4500800000000000000
+      internalID: 381765843644911774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockTilesBackGround_79
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22588f2acd47ded90800000000000000
+      internalID: -7066863749298617054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
