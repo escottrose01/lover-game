@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     float accelerationTimeAirborne = 0.2f;
     float accelerationTimeGrouded = 0.1f;
     float moveSpeed = 9;
+    bool enableWallSliding = false;
 
     public Vector2 wallJumpClimb;
     public Vector2 wallJumpOff;
@@ -59,7 +60,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         CalculateVelocity();
-        HandleWallSliding();
+        if (enableWallSliding) HandleWallSliding();
 
         UpdateAnimator();
 
