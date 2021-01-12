@@ -37,6 +37,7 @@ public class DialogueQuest : Approachable, IQuest
         if (isQuestComplete)
         {
             questComplete.Invoke();
+            isQuestComplete = false;
         }
     }
 
