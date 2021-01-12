@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public float maxJumpHeight = 4f;
     public float minHumpHeight = 1f;
     public float timeToJumpApex = 0.4f;
+    public float maxFallSpeed = 16f;
     float accelerationTimeAirborne = 0.2f;
     float accelerationTimeGrouded = 0.1f;
     float moveSpeed = 9;
@@ -109,6 +110,7 @@ public class Player : MonoBehaviour
         float targetVelocityX = directionalInput.x * moveSpeed;
         velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? accelerationTimeGrouded : accelerationTimeAirborne);
         velocity.y += gravityMultiplier * gravity * Time.deltaTime;
+        if (velocity.y < -maxFallSpeed) velocity.y = -maxFallSpeed;
     }
 
     public void OnJumpInputDown()
