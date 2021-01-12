@@ -78,6 +78,12 @@ public class SceneLoader : MonoBehaviour
 
     private IEnumerator NextSceneCoroutine(int buildIndex)
     {
+        if (canvasGroup == null)
+        {
+            SceneManager.LoadScene(buildIndex);
+            yield break;
+        }
+
         while (canvasGroup.alpha < 1)
         {
             canvasGroup.alpha += Time.unscaledDeltaTime / fadeTime;

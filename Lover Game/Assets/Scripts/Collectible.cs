@@ -24,11 +24,14 @@ public class Collectible : MonoBehaviour
                 case CollectibleType.Smile:
                     HUD.Instance.AnimateSmileCollect(transform.position);
                     break;
+                case CollectibleType.Goal:
+                    SceneLoader.Instance.NextScene();
+                    break;
                 default:
                     break;
             }
         }
     }
 
-    public enum CollectibleType { Heart, Smile, Other }
+    public enum CollectibleType { Heart, Smile, Goal, Other }
 }
