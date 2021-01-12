@@ -49,6 +49,9 @@ public class PlatformerController : RaycastController
         float directionX = collisions.faceDirection;
         float rayLength = Mathf.Abs(moveAmount.x) + skinWidth;
 
+        List<GameObject> ignored = new List<GameObject>();
+        List<int> ignoredLayers = new List<int>();
+
         if (Mathf.Abs(moveAmount.x) < skinWidth) rayLength = 2 * skinWidth;
 
         for (int i = 0; i < horizontalRayCount; ++i)
@@ -56,13 +59,18 @@ public class PlatformerController : RaycastController
             Vector2 rayOrigin = (directionX == -1) ? raycastOrigins.bottomLeft : raycastOrigins.bottomRight;
             rayOrigin += Vector2.up * (horizontalRaySpacing * i);
             RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, collisionMask);
-
             Debug.DrawRay(rayOrigin, Vector2.right * directionX, Color.red);
+
+            while (hit && hit.distance == 0f)
+            {
+                ignored.Add(hit.transform.gameObject);
+                ignoredLayers.Add(hit.transform.gameObject.layer);
+                hit.transform.gameObject.layer = 2; // ignore raycast
+                hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, collisionMask);
+            }
 
             if (hit)
             {
-                if (hit.distance == 0f) continue;
-
                 float slopeAngle = Vector2.Angle(hit.normal, Vector2.up);
 
                 if (i == 0 && slopeAngle <= maxSlopeAngle)
@@ -98,6 +106,11 @@ public class PlatformerController : RaycastController
                 }
             }
         }
+
+        for (int i = 0; i < ignored.Count; ++i)
+        {
+            ignored[i].layer = ignoredLayers[i];
+        }
     }
 
     void VerticalCollisions(ref Vector2 moveAmount)
@@ -127,7 +140,7 @@ public class PlatformerController : RaycastController
                     }
                 }
 
-                moveAmount.y = (hit.distance - skinWidth) * directionY;
+                moveAmount.y = Mathf.Max(0f, (hit.distance - skinWidth)) * directionY;
                 rayLength = hit.distance;
 
                 if (collisions.climbingSlope)
