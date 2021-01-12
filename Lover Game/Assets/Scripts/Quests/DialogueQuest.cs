@@ -7,10 +7,13 @@ using UnityEngine.Events;
 public class DialogueQuest : Approachable, IQuest
 {
     public Dialogue[] questDialogue;
+    public UnityEvent questComplete;
 
     int questCompletionStatus;
     DialogueContainer dialogueContainer;
     Animator tooltipAnimator;
+
+    bool isQuestComplete;
 
     private void Start()
     {
@@ -20,8 +23,21 @@ public class DialogueQuest : Approachable, IQuest
 
     public void ProgressQuest()
     {
-        dialogueContainer.dialogue = questDialogue[questCompletionStatus];
-        questCompletionStatus = Mathf.Min(questDialogue.Length - 1, questCompletionStatus + 1);
+        dialogueContainer.dialogue = questDialogue[questCompletionStatus++];
+
+        if (questCompletionStatus == questDialogue.Length)
+        {
+            isQuestComplete = true;
+            --questCompletionStatus;
+        }
+    }
+
+    public void TryQuestComplete()
+    {
+        if (isQuestComplete)
+        {
+            questComplete.Invoke();
+        }
     }
 
     protected override void OnApproach()

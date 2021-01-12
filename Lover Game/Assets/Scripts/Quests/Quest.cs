@@ -6,4 +6,5 @@ using UnityEngine.Events;
 public interface IQuest
 {
     void ProgressQuest();
+    void TryQuestComplete();
 }

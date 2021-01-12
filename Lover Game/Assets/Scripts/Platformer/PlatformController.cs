@@ -203,7 +203,7 @@ public class PlatformController : RaycastController
             float size = 0.3f;
             for (int i = 0; i < localWaypoints.Length; ++i)
             {
-                Vector3 globalWaypointPosition = (Application.isPlaying) ? globalWaypoints[i] : localWaypoints[i] + transform.position;
+                Vector3 globalWaypointPosition = (globalWaypoints != null) ? globalWaypoints[i] : localWaypoints[i] + transform.position;
                 Gizmos.DrawLine(globalWaypointPosition + Vector3.down * size, globalWaypointPosition + Vector3.up * size);
                 Gizmos.DrawLine(globalWaypointPosition + Vector3.left * size, globalWaypointPosition + Vector3.right * size);
             }

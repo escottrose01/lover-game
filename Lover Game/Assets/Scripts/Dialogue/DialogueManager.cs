@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 
 public class DialogueManager : MonoBehaviour
@@ -19,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     Queue<string> sentences;
 
     string sentence;
+    UnityEvent dialogueClose;
     IEnumerator dialogueTyper;
 
     private void Awake()
@@ -33,10 +35,12 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, UnityEvent dialogueClose)
     {
         sentences.Clear();
         Showing = true;
+
+        this.dialogueClose = dialogueClose;
 
         animator.SetBool("isOpen", true);
         TimeManager.Instance.FreezeTime();
@@ -103,5 +107,7 @@ public class DialogueManager : MonoBehaviour
         TimeManager.Instance.UnfreezeTime();
         sentence = null;
         Showing = false;
+
+        dialogueClose.Invoke();
     }
 }

@@ -124,9 +124,10 @@ GameObject:
   - component: {fileID: 5795488458397330827}
   - component: {fileID: 5795488458397330836}
   - component: {fileID: 5795488458397330837}
+  - component: {fileID: 5795488458397330824}
   - component: {fileID: 5795488458397330825}
   - component: {fileID: 5795488458397330826}
-  - component: {fileID: 5795488458397330824}
+  - component: {fileID: 7916189753994074789}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -219,34 +220,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5795488458397330825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5795488458397330838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fbaa376e28216f4b80af29bee1a8f79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Margaret
-    sentences: []
---- !u!114 &5795488458397330826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5795488458397330838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9362b16a37552db4493eef765d736450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questDialogue: []
 --- !u!58 &5795488458397330824
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -263,3 +236,52 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2
+--- !u!114 &5795488458397330825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795488458397330838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbaa376e28216f4b80af29bee1a8f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Margaret
+    sentences: []
+  dialogueClose:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5795488458397330826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795488458397330838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9362b16a37552db4493eef765d736450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questDialogue: []
+  questComplete:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7916189753994074789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795488458397330838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bcb22a0aa447aa42ae0cf13e4492381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numSmiles: 20
+  spawnTime: 1
+  numRotations: 2
