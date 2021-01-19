@@ -90,8 +90,8 @@ public class DialogueManager : MonoBehaviour
             counter = (counter + 1) % framesPerCharacter;
             if (counter == 0)
             {
-                dialogueText.text += chars[curChar];
-                ++curChar;
+                dialogueText.text += chars[curChar++];
+                AudioManager.Instance.PlayDialogue();
             }
             yield return null;
         }

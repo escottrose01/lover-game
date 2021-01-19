@@ -8,6 +8,7 @@ public class Collectible : MonoBehaviour
 {
     public UnityEvent onCollect;
     public CollectibleType collectibleType = CollectibleType.Other;
+    public AudioClip collectClip;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -26,8 +27,10 @@ public class Collectible : MonoBehaviour
                     break;
                 case CollectibleType.Goal:
                     SceneLoader.Instance.NextScene();
+                    AudioManager.Instance.PlayGoalCollect();
                     break;
                 default:
+                    AudioManager.Instance.PlaySound(collectClip, 0.25f);
                     break;
             }
         }

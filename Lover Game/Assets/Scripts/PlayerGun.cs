@@ -37,6 +37,8 @@ public class PlayerGun : Fireable
             GameObject obj = Instantiate(bulletPrefab, transform.position + Vector3.forward, Quaternion.identity);
             obj.SetActive(true);
             obj.GetComponent<Projectile>().FireProjectile(direction);
+
+            AudioManager.Instance.PlayShoot();
         }
     }
 }

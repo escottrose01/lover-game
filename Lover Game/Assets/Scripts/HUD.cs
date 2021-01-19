@@ -57,6 +57,8 @@ public class HUD : MonoBehaviour
         StartCoroutine(Tween.TweenVector(x => rt.sizeDelta = x, rt.sizeDelta, smileRect.sizeDelta, 1f, Tween.Easing.Linear));
         Destroy(heart, 1.1f);
         Invoke(nameof(CollectHeart), 1.1f);
+
+        AudioManager.Instance.PlayItemPickup();
     }
 
     public void AnimateSmileCollect(Vector3 startPos)
@@ -75,6 +77,8 @@ public class HUD : MonoBehaviour
         StartCoroutine(Tween.TweenVector(x => rt.sizeDelta = x, rt.sizeDelta, smileRect.sizeDelta, 1f, Tween.Easing.Linear));
         Destroy(smile, 1.1f);
         Invoke(nameof(CollectSmile), 1.1f);
+
+        AudioManager.Instance.PlayItemPickup();
     }
 
     void CollectSmile()
