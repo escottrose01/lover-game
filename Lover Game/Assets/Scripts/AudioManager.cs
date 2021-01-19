@@ -1,10 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    static AudioManager instance;
+
+    public AudioMixer audioMixer;
+
+    public float MusicLevelPercent
+    {
+        set
+        {
+            float percent = Mathf.Clamp01(value);
+            SetMusicVolume(percent * musicLevelMax);
+        }
+    }
+    float musicLevelMax = 1f;
+    float soundLevelMax = 1f;
 
     public AudioSource audioSource;
     public AudioClip[] footstepClips;
@@ -12,6 +25,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip itemPickupClip;
     public AudioClip goalCollectClip;
     public AudioClip shootClip;
+
+    static AudioManager instance;
 
     public static AudioManager Instance
     {
@@ -38,6 +53,13 @@ public class AudioManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
+    }
+
+    void SetMusicVolume(float decimalVolume)
+    {
+        float dbVolume = Mathf.Log10(decimalVolume) * 20f;
+        dbVolume = Mathf.Clamp(dbVolume, -80f, 0f);
+        audioMixer.SetFloat("MusicVol", dbVolume);
     }
 
     public void PlaySound(AudioClip audioClip)

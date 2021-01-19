@@ -45,6 +45,16 @@ public class SceneLoader : MonoBehaviour
         transition = GetComponent<Animator>();
     }
 
+    public void KillVolume()
+    {
+        StartCoroutine(Tween.ExecuteCoroutine(x => AudioManager.Instance.MusicLevelPercent = x, 1f, 0f, transitionTime, Tween.Easing.Linear));
+    }
+
+    public void RaiseVolume()
+    {
+        StartCoroutine(Tween.ExecuteCoroutine(x => AudioManager.Instance.MusicLevelPercent = x, 0f, 1f, transitionTime, Tween.Easing.Linear));
+    }
+
     public void Restart()
     {
         if (transitionRoutine == null)
