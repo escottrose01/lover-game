@@ -42,12 +42,12 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySound(AudioClip audioClip)
     {
-        audioSource.PlayOneShot(audioClip);
+        if (audioClip != null) audioSource.PlayOneShot(audioClip);
     }
 
     public void PlaySound(AudioClip audioClip, float volumeScale)
     {
-        audioSource.PlayOneShot(audioClip, volumeScale);
+        if (audioClip != null) audioSource.PlayOneShot(audioClip, volumeScale);
     }
 
     public void PlayItemPickup()

@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public float minHumpHeight = 1f;
     public float timeToJumpApex = 0.4f;
     public float maxFallSpeed = 16f;
+    public float minY;
     float accelerationTimeAirborne = 0.2f;
     float accelerationTimeGrouded = 0.1f;
     float moveSpeed = 9;
@@ -33,6 +34,9 @@ public class Player : MonoBehaviour
     PlatformerController controller;
     PlayerGun gun;
 
+    [HideInInspector]
+    public Vector3 checkpoint;
+
     Animator animator;
     SpriteRenderer sr;
 
@@ -49,6 +53,8 @@ public class Player : MonoBehaviour
         gun = GetComponent<PlayerGun>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+
+        checkpoint = transform.position;
 
         gravity = -2f * maxJumpHeight / (timeToJumpApex * timeToJumpApex);
         maxJumpVelocity = Mathf.Abs(gravity * timeToJumpApex);
@@ -72,6 +78,8 @@ public class Player : MonoBehaviour
             if (controller.collisions.slidingDownMaxSlope) velocity.y += controller.collisions.slopeNormal.y * -gravity * Time.deltaTime;
             else velocity.y = 0;
         }
+
+        if (transform.position.y < minY) Respawn();
     }
 
     private void UpdateAnimator()
@@ -174,5 +182,17 @@ public class Player : MonoBehaviour
     {
         directionalInput = input;
         if (input.x != 0f) inputDirectionX = Mathf.Sign(input.x);
+    }
+
+    public void Respawn()
+    {
+        transform.position = checkpoint;
+        velocity = Vector3.zero;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(new Vector3(-5000f, minY, 0), new Vector3(5000f, minY, 0));
     }
 }

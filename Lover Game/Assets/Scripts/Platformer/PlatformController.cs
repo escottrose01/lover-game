@@ -201,7 +201,9 @@ public class PlatformController : RaycastController
         {
             Gizmos.color = Color.red;
             float size = 0.3f;
-            for (int i = 0; i < localWaypoints.Length; ++i)
+            int max = localWaypoints.Length;
+            if (globalWaypoints != null) max = Mathf.Min(max, globalWaypoints.Length);
+            for (int i = 0; i < max; ++i)
             {
                 Vector3 globalWaypointPosition = (globalWaypoints != null) ? globalWaypoints[i] : localWaypoints[i] + transform.position;
                 Gizmos.DrawLine(globalWaypointPosition + Vector3.down * size, globalWaypointPosition + Vector3.up * size);
