@@ -53,11 +53,6 @@ public class GameStats : MonoBehaviour
         smileCollected.Invoke();
     }
 
-    public static void Foo()
-    {
-
-    }
-
     public void SaveCounts()
     {
         heartCount[levelNum] = Mathf.Max(heartCount[levelNum], LevelHeartCount);
