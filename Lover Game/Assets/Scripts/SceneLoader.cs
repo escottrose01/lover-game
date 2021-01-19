@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public CanvasGroup canvasGroup;
+    Animator transition;
 
-    private float fadeTime = 0.5f;
+    private float transitionTime = 2f;
 
-    private IEnumerator fadeRoutine;
+    private IEnumerator transitionRoutine;
 
     private static SceneLoader instance;
     public static SceneLoader Instance
@@ -40,65 +40,69 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        transition = GetComponent<Animator>();
+    }
+
     public void Restart()
     {
-        if (fadeRoutine == null)
+        if (transitionRoutine == null)
         {
-            fadeRoutine = NextSceneCoroutine(SceneManager.GetActiveScene().buildIndex);
-            StartCoroutine(fadeRoutine);
+            transitionRoutine = NextSceneCoroutine(SceneManager.GetActiveScene().buildIndex);
+            StartCoroutine(transitionRoutine);
         }
     }
 
     public void MainMenu()
     {
-        if (fadeRoutine == null)
+        if (transitionRoutine == null)
         {
-            fadeRoutine = NextSceneCoroutine(0);
-            StartCoroutine(fadeRoutine);
+            transitionRoutine = NextSceneCoroutine(0);
+            StartCoroutine(transitionRoutine);
         }
     }
 
     public void NextScene()
     {
-        if (fadeRoutine == null)
+        if (transitionRoutine == null)
         {
-            fadeRoutine = NextSceneCoroutine((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
-            StartCoroutine(fadeRoutine);
+            transitionRoutine = NextSceneCoroutine((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
+            StartCoroutine(transitionRoutine);
         }
     }
 
     public void LoadScene(int sceneIndex)
     {
-        if (fadeRoutine == null)
+        if (transitionRoutine == null)
         {
-            fadeRoutine = NextSceneCoroutine(sceneIndex);
-            StartCoroutine(fadeRoutine);
+            transitionRoutine = NextSceneCoroutine(sceneIndex);
+            StartCoroutine(transitionRoutine);
         }
     }
 
     private IEnumerator NextSceneCoroutine(int buildIndex)
     {
-        if (canvasGroup == null)
+        // fallback transition
+        if (transition == null)
         {
+            yield return new WaitForSeconds(transitionTime);
             SceneManager.LoadScene(buildIndex);
             yield break;
         }
 
-        while (canvasGroup.alpha < 1)
-        {
-            canvasGroup.alpha += Time.unscaledDeltaTime / fadeTime;
-            yield return null;
-        }
+        // start transition-in animation
+        transition.SetTrigger("Start");
 
+        // wait
+        yield return new WaitForSeconds(transitionTime);
+
+        // change scene
         SceneManager.LoadScene(buildIndex);
-        yield return new WaitForSeconds(0.25f);
 
-        while (canvasGroup.alpha > 0)
-        {
-            canvasGroup.alpha -= Time.unscaledDeltaTime / fadeTime;
-            yield return null;
-        }
+        // start transition-out animation
+        transition.SetTrigger("End");
 
-        fadeRoutine = null;
+        transitionRoutine = null;
     }
 }
