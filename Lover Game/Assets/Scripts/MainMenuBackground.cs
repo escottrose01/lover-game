@@ -12,18 +12,23 @@ public class MainMenuBackground : MonoBehaviour
     int numHearts = 100;
     float minY;
     float maxY;
+    bool go;
     GameObject[] hearts;
     float[] scales;
     float[] rotateScales;
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
+        // I don't know why I have to do this terribleness. Stupid WebGL!
+        yield return new WaitForSeconds(0.1f);
+
         hearts = new GameObject[numHearts];
         scales = new float[numHearts];
         rotateScales = new float[numHearts];
 
-        Rect bounds = GetComponent<RectTransform>().rect;
+        RectTransform rectTransform = GetComponent<RectTransform>();
+        Rect bounds = rectTransform.rect;
         minY = bounds.min.y - 2 * Mathf.Sqrt(2) * heartSprite.rect.height;
         maxY = bounds.max.y + 2 * Mathf.Sqrt(2) * heartSprite.rect.height;
 
@@ -46,18 +51,23 @@ public class MainMenuBackground : MonoBehaviour
             float y = Random.Range(-height / 2, height / 2);
             hearts[i].transform.localPosition = new Vector3(x, y, 0f);
         }
+
+        go = true;
     }
 
     private void Update()
     {
-        for (int i = 0; i < numHearts; ++i)
+        if (go)
         {
-            Vector3 position = hearts[i].transform.localPosition;
-            position.y -= Time.deltaTime * fallSpeed * scales[i];
-            if (position.y < minY) position.y = maxY;
+            for (int i = 0; i < numHearts; ++i)
+            {
+                Vector3 position = hearts[i].transform.localPosition;
+                position.y -= Time.deltaTime * fallSpeed * scales[i];
+                if (position.y < minY) position.y = maxY;
 
-            hearts[i].transform.localPosition = position;
-            hearts[i].transform.Rotate(Vector3.forward, rotateSpeed * rotateScales[i] * Time.deltaTime);
+                hearts[i].transform.localPosition = position;
+                hearts[i].transform.Rotate(Vector3.forward, rotateSpeed * rotateScales[i] * Time.deltaTime);
+            } 
         }
     }
 }

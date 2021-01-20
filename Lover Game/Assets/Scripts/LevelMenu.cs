@@ -13,13 +13,19 @@ public class LevelMenu : MonoBehaviour
     public Sprite LevelLockedSprite;
     public int numCols;
 
-    private void Start()
+    private IEnumerator Start()
     {
+        // I don't know why I have to do this terribleness. Stupud WebGL!
+        yield return new WaitForSeconds(0.1f);
+
         int numRows = GameStats.numLevels / numCols;
         if (GameStats.numLevels % numRows != 0) ++numCols;
 
         VerticalLayoutGroup verticalLayout = levelArea.AddComponent<VerticalLayoutGroup>();
         verticalLayout.childAlignment = TextAnchor.MiddleCenter;
+
+        //verticalLayout.childControlHeight = false;
+        //verticalLayout.childControlWidth = false;
 
         for (int r = 0; r < numRows; ++r)
         {
@@ -29,6 +35,7 @@ public class LevelMenu : MonoBehaviour
             };
             curRow.AddComponent<RectTransform>();
             curRow.transform.SetParent(levelArea.transform);
+            curRow.transform.localScale = Vector3.one;
 
             HorizontalLayoutGroup horizontalLayout = curRow.AddComponent<HorizontalLayoutGroup>();
             horizontalLayout.childControlWidth = false;
@@ -43,6 +50,12 @@ public class LevelMenu : MonoBehaviour
                     GameObject obj = Instantiate(levelIcon, curRow.transform);
                     obj.name = "LevelButton-" + levelNum.ToString();
                     obj.GetComponentInChildren<TMP_Text>().text = "Level " + levelNum.ToString();
+
+                    //RectTransform rectTransform = obj.GetComponentInChildren<RectTransform>();
+                    //Rect rect = rectTransform.rect;
+                    //rect.width = 100;
+                    //rect.height = 100;
+                    //rectTransform.sizeDelta = 100 * Vector2.one;
 
                     Button button = obj.GetComponent<Button>();
                     Image image = obj.GetComponent<Image>();
