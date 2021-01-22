@@ -87,11 +87,14 @@ public class DialogueManager : MonoBehaviour
 
         while (curChar < size)
         {
-            counter = (counter + 1) % framesPerCharacter;
-            if (counter == 0)
+            if (PauseMenu.Instance == null || !PauseMenu.Instance.Paused)
             {
-                dialogueText.text += chars[curChar++];
-                AudioManager.Instance.PlayDialogue();
+                counter = (counter + 1) % framesPerCharacter;
+                if (counter == 0)
+                {
+                    dialogueText.text += chars[curChar++];
+                    AudioManager.Instance.PlayDialogue();
+                } 
             }
             yield return null;
         }

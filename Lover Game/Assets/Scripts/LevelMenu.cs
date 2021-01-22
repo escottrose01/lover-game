@@ -16,7 +16,7 @@ public class LevelMenu : MonoBehaviour
     private IEnumerator Start()
     {
         // I don't know why I have to do this terribleness. Stupud WebGL!
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSecondsRealtime(0.1f);
 
         int numRows = GameStats.numLevels / numCols;
         if (GameStats.numLevels % numRows != 0) ++numCols;

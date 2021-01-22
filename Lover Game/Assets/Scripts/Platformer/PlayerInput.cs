@@ -8,6 +8,7 @@ public class PlayerInput : MonoBehaviour
     Player player;
 
     public static bool interacting;
+    public static bool pausing;
     public static int interactingBufferFrames;
     public static bool Interacting
     {
@@ -20,6 +21,19 @@ public class PlayerInput : MonoBehaviour
         private set
         {
             interacting = value;
+        }
+    }
+    public static bool Pausing
+    {
+        get
+        {
+            bool tmp = pausing;
+            pausing = false;
+            return tmp;
+        }
+        private set
+        {
+            pausing = value;
         }
     }
 
@@ -52,5 +66,6 @@ public class PlayerInput : MonoBehaviour
                 interactingBufferFrames = 2;
             }
         }
+        if (Input.GetKeyDown(KeyCode.Escape) && PauseMenu.Instance != null) PauseMenu.Instance.TogglePause();
     }
 }

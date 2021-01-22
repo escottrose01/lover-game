@@ -28,7 +28,22 @@ public class TimeManager : MonoBehaviour
     private void Awake()
     {
         if (instance != null && instance != this) Destroy(gameObject);
-        else instance = this;
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+            SceneManager.sceneUnloaded += SceneManager_sceneUnloaded;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneUnloaded -= SceneManager_sceneUnloaded;
+    }
+
+    private void SceneManager_sceneUnloaded(Scene arg0)
+    {
+        HardUnfreezeTime();
     }
 
     public void FreezeTime()

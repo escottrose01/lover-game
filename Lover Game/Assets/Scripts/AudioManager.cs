@@ -8,14 +8,34 @@ public class AudioManager : MonoBehaviour
 
     public AudioMixer audioMixer;
 
+    float musicLevelPercent = 1f;
     public float MusicLevelPercent
     {
+        get
+        {
+            return musicLevelPercent;
+        }
         set
         {
-            float percent = Mathf.Clamp01(value);
-            SetMusicVolume(percent * musicLevelMax);
+            musicLevelPercent = Mathf.Clamp01(value);
+            SetMusicVolume(musicLevelPercent * musicLevelMax);
         }
     }
+
+    float soundLevelPercent = 1f;
+    public float SoundLevelPercent
+    {
+        get
+        {
+            return soundLevelPercent;
+        }
+        set
+        {
+            soundLevelPercent = Mathf.Clamp01(value);
+            SetSoundVolume(soundLevelPercent * soundLevelMax);
+        }
+    }
+
     float musicLevelMax = 1f;
     float soundLevelMax = 1f;
 
@@ -60,6 +80,13 @@ public class AudioManager : MonoBehaviour
         float dbVolume = Mathf.Log10(decimalVolume) * 20f;
         dbVolume = Mathf.Clamp(dbVolume, -80f, 0f);
         audioMixer.SetFloat("MusicVol", dbVolume);
+    }
+    
+    void SetSoundVolume(float decimalVolume)
+    {
+        float dbVolume = Mathf.Log10(decimalVolume) * 20f;
+        dbVolume = Mathf.Clamp(dbVolume, -80f, 0f);
+        audioMixer.SetFloat("SoundVol", dbVolume);
     }
 
     public void PlaySound(AudioClip audioClip)

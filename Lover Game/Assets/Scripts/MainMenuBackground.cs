@@ -21,7 +21,7 @@ public class MainMenuBackground : MonoBehaviour
     IEnumerator Start()
     {
         // I don't know why I have to do this terribleness. Stupid WebGL!
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSecondsRealtime(0.1f);
 
         hearts = new GameObject[numHearts];
         scales = new float[numHearts];

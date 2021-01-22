@@ -96,7 +96,7 @@ public class SceneLoader : MonoBehaviour
         // fallback transition
         if (transition == null)
         {
-            yield return new WaitForSeconds(transitionTime);
+            yield return new WaitForSecondsRealtime(transitionTime);
             SceneManager.LoadScene(buildIndex);
             yield break;
         }
@@ -105,7 +105,7 @@ public class SceneLoader : MonoBehaviour
         transition.SetTrigger("Start");
 
         // wait
-        yield return new WaitForSeconds(transitionTime);
+        yield return new WaitForSecondsRealtime(transitionTime);
 
         // change scene
         SceneManager.LoadScene(buildIndex);

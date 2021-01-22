@@ -31,7 +31,7 @@ public class PlayerGun : Fireable
 
     public override void Fire(Vector2 direction)
     {
-        if (cooldown.CheckReady())
+        if (cooldown.CheckReady() && !PauseMenu.Instance.Paused)
         {
             cooldown.StartCooldown();
             GameObject obj = Instantiate(bulletPrefab, transform.position + Vector3.forward, Quaternion.identity);
