@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class MainMenu : MonoBehaviour
     public GameObject levelSelectUI;
     public GameObject panelHolder;
 
+    public Slider musicSlider;
+    public Slider soundSlider;
+
     RectTransform startScreenRect;
     RectTransform optionsMenuRect;
     RectTransform levelSelectRect;
@@ -16,6 +20,9 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        musicSlider.value = AudioManager.Instance.MusicLevelMax;
+        soundSlider.value = AudioManager.Instance.SoundLevelMax;
+
         startScreenRect = startScreenUI.GetComponent<RectTransform>();
         optionsMenuRect = optionsMenuUI.GetComponent<RectTransform>();
         levelSelectRect = levelSelectUI.GetComponent<RectTransform>();
@@ -49,5 +56,15 @@ public class MainMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void SetMusicVolume(float value)
+    {
+        AudioManager.Instance.MusicLevelMax = value;
+    }
+
+    public void SetSoundVolume(float value)
+    {
+        AudioManager.Instance.SoundLevelMax = value;
     }
 }

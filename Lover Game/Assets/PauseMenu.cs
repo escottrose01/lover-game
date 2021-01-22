@@ -21,8 +21,8 @@ public class PauseMenu : MonoBehaviour
 
     private void Start()
     {
-        musicSlider.value = AudioManager.Instance.MusicLevelPercent;
-        soundSlider.value = AudioManager.Instance.SoundLevelPercent;
+        musicSlider.value = AudioManager.Instance.MusicLevelMax;
+        soundSlider.value = AudioManager.Instance.SoundLevelMax;
     }
 
     public void TogglePause()
@@ -52,11 +52,11 @@ public class PauseMenu : MonoBehaviour
 
     public void SetMusicVolume(float value)
     {
-        AudioManager.Instance.MusicLevelPercent = value;
+        AudioManager.Instance.MusicLevelMax = value;
     }
 
      public void SetSoundVolume(float value)
     {
-        AudioManager.Instance.SoundLevelPercent = value;
+        AudioManager.Instance.SoundLevelMax = value;
     }
 }

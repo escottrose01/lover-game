@@ -37,7 +37,32 @@ public class AudioManager : MonoBehaviour
     }
 
     float musicLevelMax = 1f;
+    public float MusicLevelMax
+    {
+        get
+        {
+            return musicLevelMax;
+        }
+        set
+        {
+            musicLevelMax = Mathf.Clamp01(value);
+            SetMusicVolume(musicLevelPercent * musicLevelMax);
+        }
+    }
+
     float soundLevelMax = 1f;
+    public float SoundLevelMax
+    {
+        get
+        {
+            return soundLevelMax;
+        }
+        set
+        {
+            soundLevelMax = Mathf.Clamp01(value);
+            SetSoundVolume(soundLevelPercent * soundLevelMax);
+        }
+    }
 
     public AudioSource audioSource;
     public AudioClip[] footstepClips;
