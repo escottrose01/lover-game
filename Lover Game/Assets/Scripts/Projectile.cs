@@ -34,8 +34,13 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (isEnemyProjectile && collision.gameObject.CompareTag("Player")) print("you dead!");
-        else if (!isEnemyProjectile && collision.gameObject.CompareTag("Enemy")) print("EnemyDied!");
-        else if (!collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Enemy")) Destroy(gameObject);
+        if (!collision.gameObject.CompareTag("Player")) {
+            Hittable hittable = collision.gameObject.GetComponent<Hittable>();
+            if (hittable != null)
+            {
+                hittable.onHit.Invoke();
+            }
+            Destroy(gameObject);
+        }
     }
 }

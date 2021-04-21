@@ -70,6 +70,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip itemPickupClip;
     public AudioClip goalCollectClip;
     public AudioClip shootClip;
+    public AudioClip toggleClip;
 
     static AudioManager instance;
 
@@ -157,5 +158,10 @@ public class AudioManager : MonoBehaviour
     public void PlayShoot()
     {
         if (shootClip != null) audioSource.PlayOneShot(shootClip, 0.25f);
+    }
+
+    public void PlaySwitchToggle()
+    {
+        if (toggleClip != null) audioSource.PlayOneShot(toggleClip, 1.0f);
     }
 }
