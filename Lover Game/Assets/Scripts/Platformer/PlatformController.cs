@@ -55,7 +55,9 @@ public class PlatformController : RaycastController
         fromWaypointIndex %= globalWaypoints.Length;
         int toWaypointIndex = (fromWaypointIndex + 1) % globalWaypoints.Length;
         float distanceBetweenWaypoints = Vector3.Distance(globalWaypoints[fromWaypointIndex], globalWaypoints[toWaypointIndex]);
-        percentBetweenWaypoints += Time.deltaTime * speed / distanceBetweenWaypoints;
+        percentBetweenWaypoints += (distanceBetweenWaypoints != 0) ?
+            Time.deltaTime * speed / distanceBetweenWaypoints :
+            1f;
 
         Vector3 newPos = Vector3.Lerp(globalWaypoints[fromWaypointIndex], globalWaypoints[toWaypointIndex], Tween.GetEasedValue(percentBetweenWaypoints, Tween.Easing.InOutSine));
 
@@ -75,7 +77,6 @@ public class PlatformController : RaycastController
 
             nextMoveTime = Time.time + waitTime;
         }
-
         return newPos - transform.position;
     }
 
