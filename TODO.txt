@@ -1,0 +1,7 @@
+- add credits menu
+- add buttons
+- connect level select to unlocked levels
+    -- actually bookkeep completed levels
+- make more levels
+- find more music / sfx
+- fix final scene
