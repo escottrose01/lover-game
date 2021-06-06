@@ -10,6 +10,7 @@ public class CameraController : MonoBehaviour
     public float lookSmoothTimeX;
     public float verticalSmoothTime;
     public Vector2 focusAreaSize;
+    public Rect bounds;
 
     FocusArea focusArea;
 
@@ -55,14 +56,24 @@ public class CameraController : MonoBehaviour
 
         focusPosition.y = Mathf.SmoothDamp(transform.position.y, focusPosition.y, ref smoothVelocityY, verticalSmoothTime);
         focusPosition += Vector2.right * currentLookaheadX;
-        transform.position = (Vector3)focusPosition + Vector3.forward * -10f;
+        Vector3 newPos = (Vector3)focusPosition + Vector3.forward * -10f;
+        newPos.x = Mathf.Clamp(newPos.x, bounds.xMin, bounds.xMax);
+        newPos.y = Mathf.Clamp(newPos.y, bounds.yMin, bounds.yMax);
+        transform.position = newPos;
     }
 
     private void OnDrawGizmos()
     {
+        // focus area
         Gizmos.color = new Color(1f, 0f, 0f, 0.5f);
         if (Application.isPlaying) Gizmos.DrawCube(focusArea.center, focusAreaSize);
         else Gizmos.DrawCube(transform.position, focusAreaSize);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        // bounds
+        Gizmos.DrawWireCube(bounds.center, bounds.size);
     }
 
     struct FocusArea
