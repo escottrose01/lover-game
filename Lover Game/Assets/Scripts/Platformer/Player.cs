@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     float accelerationTimeGrouded = 0.1f;
     float moveSpeed = 9;
     bool enableWallSliding = false;
+    bool ignoreInput = false;
 
     public Vector2 wallJumpClimb;
     public Vector2 wallJumpOff;
@@ -45,6 +46,7 @@ public class Player : MonoBehaviour
     int wallDirX;
     int directionX;
     float inputDirectionX = 1;
+    bool dying = false;
 
     // Start is called before the first frame update
     void Start()
@@ -180,14 +182,75 @@ public class Player : MonoBehaviour
 
     public void SetDirectionalInput(Vector2 input)
     {
-        directionalInput = input;
-        if (input.x != 0f) inputDirectionX = Mathf.Sign(input.x);
+        if (!ignoreInput)
+        {
+            directionalInput = input;
+            if (input.x != 0f) inputDirectionX = Mathf.Sign(input.x);
+        }
     }
 
     public void Respawn()
     {
-        transform.position = checkpoint;
+        if (!dying)
+        {
+            dying = true;
+            StartCoroutine(Die());
+        }
+    }
+
+    public IEnumerator Die()
+    {
+        float fadeTime = 0.5f;
+        float moveSpeed = 15f;
+        Vector3 start;
+        float distance = Vector3.Distance(transform.position, checkpoint);
+        float t = 0f;
+        animator.SetBool("IsDead", true);
+        ignoreInput = true;
+        directionalInput = Vector2.zero;
+
+        // fade away
+        while (t < 1f)
+        {
+            t += Time.deltaTime / fadeTime;
+
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f - 0.5f*Tween.GetEasedValue(t, Tween.Easing.InOutSine));
+
+            yield return null;
+        }
+
+        // move to checkpoint
+        start = transform.position;
+        t = 0f;
+        while (t < 1f)
+        {
+            t += (distance != 0) ?
+                Time.deltaTime * moveSpeed / distance :
+                1f;
+
+            transform.position = Vector3.LerpUnclamped(start, checkpoint, Tween.GetEasedValue(t, Tween.Easing.InOutSine));
+
+            yield return null;
+        }
+
+        animator.SetBool("IsDead", false);
         velocity = Vector3.zero;
+        ignoreInput = false;
+        UpdateAnimator();
+
+        // fade in
+        t = 0f;
+        while (t < 1f)
+        {
+            t += Time.deltaTime / fadeTime;
+
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 0.5f + 0.5f*Tween.GetEasedValue(t, Tween.Easing.InOutSine));
+
+            yield return null;
+        }
+
+        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
+        dying = false;
     }
 
     private void OnDrawGizmos()
