@@ -77,6 +77,8 @@ Tilemap:
       type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 981e0e29c56d1634b95c2a93a24bd896, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -7869403223043187030, guid: 0cb61b810d6f8444babf14fbc131efba,
@@ -87,6 +89,8 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 4955821211437959633, guid: cc199909afbd93a428c0a30e1065c6b1,
       type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 3
     m_Data:
@@ -109,11 +113,13 @@ Tilemap:
   m_TileColorArray:
   - m_RefCount: 3
     m_Data: {r: 1, g: 1, b: 1, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: 5.259201, g: 5.259201, b: 5.259201, a: 5.259201}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -3, y: 0, z: 0}
-  m_Size: {x: 3, y: 1, z: 1}
+  m_Origin: {x: -3, y: -1, z: 0}
+  m_Size: {x: 3, y: 2, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -191,7 +197,7 @@ GameObject:
   - component: {fileID: 6751096324432687020}
   - component: {fileID: 6512451024201485710}
   m_Layer: 31
-  m_Name: Grass-RuleTile
+  m_Name: Rule Tiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
