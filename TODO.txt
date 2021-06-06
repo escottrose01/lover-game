@@ -5,3 +5,8 @@
 - make more levels
 - find more music / sfx
 - fix final scene
+- fix shooting while dead bug
+- fix lots of things happening while dead bugs
+    - win while dead!
+- make respawn faster if farther away
+    - respawn time based?
