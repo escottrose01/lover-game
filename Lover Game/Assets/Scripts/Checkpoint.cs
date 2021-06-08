@@ -11,7 +11,7 @@ public class Checkpoint : MonoBehaviour
     {
         if (collision.CompareTag("Player") && collision.GetComponent<PlatformerController>().collisions.below)
         {
-            collision.GetComponent<Player>().checkpoint = transform.position;
+            collision.GetComponent<Player>().checkpoint = transform.position + (Vector3)spawnOffset;
         }
     }
 
