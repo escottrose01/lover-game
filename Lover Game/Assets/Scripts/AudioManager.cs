@@ -71,6 +71,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip goalCollectClip;
     public AudioClip shootClip;
     public AudioClip toggleClip;
+    public AudioClip balloonPopClip;
 
     static AudioManager instance;
 
@@ -163,5 +164,10 @@ public class AudioManager : MonoBehaviour
     public void PlaySwitchToggle()
     {
         if (toggleClip != null) audioSource.PlayOneShot(toggleClip, 1.0f);
+    }
+
+    public void PlayBalloonPop()
+    {
+        if (balloonPopClip != null) audioSource.PlayOneShot(balloonPopClip, 0.5f);
     }
 }

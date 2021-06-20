@@ -32,6 +32,9 @@ public class Player : MonoBehaviour
     Vector3 velocity;
     float velocityXSmoothing;
 
+    float balloonGravityMultiplier = 0.01f;
+    List<PlayerBalloon> balloons;
+
     PlatformerController controller;
     PlayerGun gun;
 
@@ -48,6 +51,8 @@ public class Player : MonoBehaviour
     float inputDirectionX = 1;
     bool dying = false;
 
+    public static Player Instance { get; private set; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +68,10 @@ public class Player : MonoBehaviour
         minJumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(gravity) * minHumpHeight);
 
         gravity *= 2f; // compensate for floaty jumps
+
+        balloons = new List<PlayerBalloon>();
+
+        Instance = this;
     }
 
     // Update is called once per frame
@@ -119,7 +128,7 @@ public class Player : MonoBehaviour
     {
         float targetVelocityX = directionalInput.x * moveSpeed;
         velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? accelerationTimeGrouded : accelerationTimeAirborne);
-        velocity.y += gravityMultiplier * gravity * Time.deltaTime;
+        velocity.y += (gravityMultiplier - balloonGravityMultiplier * balloons.Count) * gravity * Time.deltaTime;
         if (velocity.y < -maxFallSpeed) velocity.y = -maxFallSpeed;
     }
 
@@ -166,7 +175,7 @@ public class Player : MonoBehaviour
     public void OnJumpInputUp()
     {
         gravityMultiplier = 1f;
-        if (velocity.y > minJumpVelocity) velocity.y = minJumpVelocity;
+        if (velocity.y > minJumpVelocity && balloons.Count == 0) velocity.y = minJumpVelocity;
     }
 
     public void OnLand()
@@ -175,9 +184,14 @@ public class Player : MonoBehaviour
         animator.SetBool("IsJumping", false);
     }
 
-    public void OnFireDown()
+    public void OnFire1Down()
     {
         gun.Fire(Vector2.right * inputDirectionX);
+    }
+
+    public void OnFire2Down()
+    {
+        if (balloons.Count > 0) balloons[0].Pop(true);
     }
 
     public void SetDirectionalInput(Vector2 input)
@@ -208,6 +222,9 @@ public class Player : MonoBehaviour
         animator.SetBool("IsDead", true);
         ignoreInput = true;
         directionalInput = Vector2.zero;
+
+        while (balloons.Count > 0)
+            balloons[0].Pop(false);
 
         // fade away
         while (t < 1f)
@@ -251,6 +268,16 @@ public class Player : MonoBehaviour
 
         sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
         dying = false;
+    }
+
+    public void RegisterBalloon(PlayerBalloon balloon)
+    {
+        balloons.Add(balloon);
+    }
+
+    public void DeregisterBalloon(PlayerBalloon balloon)
+    {
+        if (balloons.Contains(balloon)) balloons.Remove(balloon);
     }
 
     private void OnDrawGizmos()

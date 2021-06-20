@@ -1,7 +1,7 @@
 - add credits menu
 - add buttons
 - connect level select to unlocked levels
-    -- actually bookkeep completed levels
+    - actually bookkeep completed levels
 - make more levels
 - find more music / sfx
 - fix final scene
@@ -10,3 +10,6 @@
     - win while dead!
 - make respawn faster if farther away
     - respawn time based?
+- make camera stop tracking player on player death
+- make balloons PlatformerControllers? Would allow collisions
+    - additionally, pop if distance to player grows too large

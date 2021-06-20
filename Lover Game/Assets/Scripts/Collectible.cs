@@ -15,7 +15,6 @@ public class Collectible : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             onCollect.Invoke();
-            Destroy(transform.gameObject);
 
             switch (collectibleType)
             {
@@ -33,6 +32,8 @@ public class Collectible : MonoBehaviour
                     AudioManager.Instance.PlaySound(collectClip, 0.25f);
                     break;
             }
+
+            Destroy(gameObject);
         }
     }
 

@@ -64,6 +64,7 @@ MonoBehaviour:
   goalCollectClip: {fileID: 8300000, guid: 2c91a231a87838744b3cf7928a8b07ac, type: 3}
   shootClip: {fileID: 8300000, guid: db8d2d1e3d9d52f459408e789f02b1d1, type: 3}
   toggleClip: {fileID: 8300000, guid: 3b7270beda5a655478f873f81fe2e657, type: 3}
+  balloonPopClip: {fileID: 8300000, guid: 6568638cfdc8caa4d949c3eb8823bcfd, type: 3}
 --- !u!82 &6555723059951607117
 AudioSource:
   m_ObjectHideFlags: 0
