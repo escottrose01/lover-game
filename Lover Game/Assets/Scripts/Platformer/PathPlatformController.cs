@@ -10,8 +10,10 @@ public class PathPlatformController : PlatformController
     public float speed;
     public bool cyclic;
     public float waitTime;
+    public bool waitForPlayer;
 
     int fromWaypointIndex;
+    bool returning;
     float percentBetweenWaypoints;
     float nextMoveTime;
 
@@ -30,6 +32,8 @@ public class PathPlatformController : PlatformController
         if (Time.time < nextMoveTime) return Vector3.zero;
 
         fromWaypointIndex %= globalWaypoints.Length;
+        if (waitForPlayer && percentBetweenWaypoints == 0f && fromWaypointIndex == 0 && !hasPassenger && !returning) return Vector3.zero;
+
         int toWaypointIndex = (fromWaypointIndex + 1) % globalWaypoints.Length;
         float distanceBetweenWaypoints = Vector3.Distance(globalWaypoints[fromWaypointIndex], globalWaypoints[toWaypointIndex]);
         percentBetweenWaypoints += (distanceBetweenWaypoints != 0) ?
@@ -49,6 +53,7 @@ public class PathPlatformController : PlatformController
                 {
                     fromWaypointIndex = 0;
                     System.Array.Reverse(globalWaypoints);
+                    returning = !returning;
                 }
             }
 

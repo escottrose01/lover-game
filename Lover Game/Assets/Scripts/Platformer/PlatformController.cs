@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class PlatformController : RaycastController
 {
     public LayerMask passengerMask;
+    protected bool hasPassenger;
 
     List<PassengerMovement> passengerMovement;
     Dictionary<Transform, PlatformerController> passengerDictionary;
@@ -53,9 +54,20 @@ public abstract class PlatformController : RaycastController
     {
         HashSet<Transform> movedPassengers = new HashSet<Transform>();
         passengerMovement.Clear();
+        hasPassenger = false;
 
         float directionX = Mathf.Sign(velocity.x);
         float directionY = Mathf.Sign(velocity.y);
+
+        // check for passengers
+        for (int i = 0; i < verticalRayCount; ++i)
+        {
+            Vector2 rayOrigin = (directionY == -1) ? raycastOrigins.bottomLeft : raycastOrigins.topLeft;
+            rayOrigin += Vector2.right * (verticalRaySpacing * i);
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.up * directionY, 2 * skinWidth, passengerMask);
+            if (hit && hit.distance != 0f)
+                hasPassenger = true;
+        }
 
         // vertically moving platform
         if (velocity.y != 0f)
